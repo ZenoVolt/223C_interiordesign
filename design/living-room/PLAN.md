@@ -1,6 +1,6 @@
 # 223C living-room iteration plan
 
-Started 9 November 2026, Singapore time. Current stage: [revision 02](iterations/02-wardrobe-and-full-height-packout/REVIEW.md) prepared using supplied module composition and confirmed sliding wardrobe / 600 mm depth. Review the girls' day/night cupboard-access restriction before selecting a layout. Iteration 01 remains superseded.
+Started 9 November 2026, Singapore time. Current stage: [revision 03](iterations/03-wall-bounded-american-walnut/REVIEW.md) keeps living cupboards within the backing wall and uses American walnut for new wooden furniture. Revision 02 retained as prior proposal; iteration 01 remains superseded. Girls' day/night cupboard-access restriction still requires review.
 
 ## Revision 02 — corrected fixed inventory and current proposal
 

@@ -1,6 +1,13 @@
 # 223C living-room brief
 
-Status: revision 02 incorporates built-in sliding wardrobe, 2000 mm Packout stacks and supplied module composition. Girls' day/night metal-cupboard access trade-off remains for owner review. Started 9 November 2026, Singapore time.
+Status: revision 03 applies wall-bounded cupboards and American walnut to new wooden furniture. Girls' day/night metal-cupboard access trade-off remains for owner review. Started 9 November 2026, Singapore time.
+
+## Latest owner direction — revision 03
+
+- In A, the cupboard must not extend beyond its backing wall. Revision 03 keeps both living cupboards within the wall endpoints; the shared storage arrangement is corrected in B too.
+- New wooden furniture should use **American walnut**. Apply to new cupboard fronts/carcasses, bed timber, side table and sofa feet. Keep retained pieces and fixed finishes as existing; walnut render is a visual approximation, not a selected product/sample.
+- [Revision 03 review](iterations/03-wall-bounded-american-walnut/REVIEW.md): 800 mm archive cupboard + 50 mm gap + 2000 mm toy/media cupboard = 2850 mm run within approximately 2937 mm backing wall. Toy unit now 900 mm high; TV rises correspondingly.
+- The girls' night-time metal-cupboard access restriction remains unresolved. This edit does not imply acceptance of that trade-off.
 
 ## Latest evidence and revision 02
 
@@ -161,3 +168,4 @@ Deadline and other decision-makers remain open; exact retained-item measurements
 | 2026-11-09 | Owner corrects Packout stacks to 2000 mm each and identifies existing girls' south-wall built-in wardrobe | Overrides iteration 01 assumptions; affected storage layouts and feasibility claims withdrawn |
 | 2026-11-09 | Wardrobe sliding doors / 600 mm depth; detailed Packout module composition supplied | Confirmed source inputs for revision 02 |
 | 2026-11-09 | Revision 02: west-wall girls' cupboards with bed-foot night access; freestanding study stacks; study archive cupboard in living | Proposed conditional layout. Night metal-cupboard full access unavailable until bed stored; owner acceptance pending |
+| 2026-11-09 | Keep A cupboards within backing wall; American walnut for new wooden furniture | Owner requirement; applied in revision 03, with shared storage correction in both options |

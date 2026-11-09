@@ -6,10 +6,11 @@ from mathutils import Vector
 HERE=Path(__file__).resolve().parent
 spec=importlib.util.spec_from_file_location('furniture_primitives',HERE/'generate_designs.py')
 g=importlib.util.module_from_spec(spec);spec.loader.exec_module(g)
-OUT=HERE/'iterations'/'02-wardrobe-and-full-height-packout';OUT.mkdir(parents=True,exist_ok=True)
+REV3='--revision03' in sys.argv
+OUT=HERE/'iterations'/('03-wall-bounded-american-walnut' if REV3 else '02-wardrobe-and-full-height-packout');OUT.mkdir(parents=True,exist_ok=True)
 g.OUT=OUT;g.DRAFT='--draft' in sys.argv
 old=json.loads((HERE/'iterations'/'01-family-room-triplets'/'layouts.json').read_text(encoding='utf-8'))
-DATA={'revision':2,'valid_for_current_brief':True,'feasibility_status':'conditional on day/night cupboard access trade-off and final product/site checks',
+DATA={'revision':3 if REV3 else 2,'new_furniture_finish':'American walnut' if REV3 else 'provisional light wood / pale fronts','valid_for_current_brief':True,'feasibility_status':'conditional on day/night cupboard access trade-off and final product/site checks',
  'baseline_sha256':hashlib.sha256(g.BASE.read_bytes()).hexdigest(),'units':'metres','variants':{},
  'assumptions':['Both Packout stacks reserve 600 W x 450 D x 2000 H mm including planning allowance; not enclosed.',
  'Packout composition per owner: two 4-drawer 48-22-8444, one multi-depth 3-drawer 48-22-8447, two cabinets 48-22-8445.',
@@ -55,8 +56,13 @@ def packout_stack(name,cy):
 
 def build(variant):
     bpy.ops.wm.open_mainfile(filepath=str(g.BASE));g.scene=bpy.context.scene;s=g.scene;g.ITEMS=[]
-    g.F=bpy.data.collections.get('13 | Loose furniture — empty for next iteration');g.F.name='13 | Loose furniture — family room iteration 02'
+    g.F=bpy.data.collections.get('13 | Loose furniture — empty for next iteration');g.F.name='13 | Loose furniture — family room iteration 03' if REV3 else '13 | Loose furniture — family room iteration 02'
     g.setup_materials()
+    if REV3:
+        wood=g.M['oak'];wood.name='American walnut — new furniture';wood.diffuse_color=(.18,.095,.045,1)
+        for node in wood.node_tree.nodes:
+            if node.type=='VALTORGB':
+                node.color_ramp.elements[0].color=(.12,.052,.022,1);node.color_ramp.elements[1].color=(.26,.135,.067,1)
     for c in bpy.data.collections:
         if c.name.startswith(('10 |','11 |','12 |')):c.hide_render=True
     for o in list(bpy.data.objects):
@@ -70,8 +76,14 @@ def build(variant):
     trundle=g.bed()
     g.cabinet('REUSE study cupboard','study',7.823333,7.13,.9,.4,2,steel=True,angle=-90)
     packout_stack('PACKOUT stack 1 / 2000 H',7.93);packout_stack('PACKOUT stack 2 / 2000 H',8.58)
-    g.cabinet('NEW toy cupboard 2400 x 500','living',4.79,6.95,2.4,.5,.8,angle=-90)
-    g.cabinet('NEW archive cupboard 800 x 500','living',4.79,5.25,.8,.5,2.1,angle=-90)
+    if REV3:
+        pale=g.M['cream'];g.M['cream']=g.M['oak']
+        g.cabinet('NEW toy cupboard 2000 x 500','living',4.79,7.44,2,.5,.9,angle=-90)
+        g.cabinet('NEW archive cupboard 800 x 500','living',4.79,5.99,.8,.5,2.1,angle=-90)
+        g.M['cream']=pale
+    else:
+        g.cabinet('NEW toy cupboard 2400 x 500','living',4.79,6.95,2.4,.5,.8,angle=-90)
+        g.cabinet('NEW archive cupboard 800 x 500','living',4.79,5.25,.8,.5,2.1,angle=-90)
     # Nominal depth represents the complete proxy, including handles, not just its carcass.
     for p in list(g.F.objects):
         if p.type!='EMPTY' or not p.name.startswith(('REUSE','NEW toy','NEW archive')):continue
@@ -85,10 +97,12 @@ def build(variant):
     g.box('R6 front',(0,.274,.24),(.225,.012,.43),g.M['screen'],.005,nas)
     if variant=='A-with-tv':
         g.sofa((.70,6.35));g.recliner((2.45,7.8),-22,(3.25,7.48));g.PLAY=(1.5,5.25,3.8,6.95)
-        p=g.group('TV 65-inch PROXY','living',(4.84,6.95),(.12,1.44,1.66),colour='#465758',purpose='screen')
+        p=g.group('TV 65-inch PROXY','living',(4.84,7.44 if REV3 else 6.95),(.12,1.44,1.76 if REV3 else 1.66),colour='#465758',purpose='screen')
         g.box('TV thin panel',(0,0,1.28),(.055,1.44,.81),g.M['dark'],.012,p)
         g.box('TV screen',(-.03,0,1.28),(.006,1.405,.776),g.M['screen'],.004,p)
         for yy in (-.43,.43):g.box('TV stand',(-.03,yy,.84),(.24,.04,.055),g.M['dark'],.005,p)
+        if REV3:
+            for child in p.children:child.location.z+=.10
     else:
         g.sofa((2.2,5.4),90);g.recliner((.85,7.8),-44,(1.5,7.17));g.PLAY=(2.05,6.15,4.2,7.85)
     a,b,c,d=g.PLAY;g.box('Loose washable play rug',((a+c)/2,(b+d)/2,.012),(c-a,d-b,.018),g.M['linen'],.035);g.props()
@@ -101,7 +115,7 @@ def build(variant):
      'checks':{'girls_night_side_gap_mm':270,'girls_day_cupboard_to_bed_gap_mm':1220,'girls_wardrobe_to_bed_foot_mm':910,
       'study_cupboard_plus_stack_allowances_mm':2100,'study_spacing_allowance_mm':100},
      'storage':{'existing_cupboards':3,'samla_contents_boxes':21,'toy_nominal_l':450,'study_box_nominal_l':495,
-       'new_living_toy_inner_envelope_l':653,'new_living_archive_inner_envelope_l':588,
+       'new_living_toy_inner_envelope_l':621 if REV3 else 653,'new_living_archive_inner_envelope_l':588,
        'status':'Content allocation retained; actual shelf/contents capacity unresolved. Metal cupboard doors not fully usable with trundle open.'}}
     cams={
      'living':g.camera('DESIGN living from entry',(2.2,3.75,1.62),(2.5,6.85,1),23),
@@ -114,7 +128,7 @@ def build(variant):
     s.render.resolution_x=1280;s.render.resolution_y=960;s.render.resolution_percentage=60 if g.DRAFT else 100
     s.render.image_settings.file_format='PNG';s.render.image_settings.color_mode='RGB';s.view_settings.view_transform='AgX'
     trundle.location.x+=.95
-    s['design_version']='revision02 '+variant;s['feasibility_status']=DATA['feasibility_status']
+    s['design_version']=('revision03 ' if REV3 else 'revision02 ')+variant;s['feasibility_status']=DATA['feasibility_status']
     s.camera=cams['living'];bpy.ops.wm.save_as_mainfile(filepath=str(OUT/(variant+'.blend')))
     if '--storage-only' in sys.argv:
         g.render(cams['living_storage'],variant+'-living-storage')

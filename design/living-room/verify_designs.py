@@ -3,8 +3,9 @@ import json, hashlib, math, sys
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[2]
-REV2='--revision02' in sys.argv
-OUT=Path(__file__).resolve().parent/'iterations'/('02-wardrobe-and-full-height-packout' if REV2 else '01-family-room-triplets')
+REV3='--revision03' in sys.argv
+REV2='--revision02' in sys.argv or REV3
+OUT=Path(__file__).resolve().parent/'iterations'/('03-wall-bounded-american-walnut' if REV3 else ('02-wardrobe-and-full-height-packout' if REV2 else '01-family-room-triplets'))
 d=json.loads((OUT/'layouts.json').read_text(encoding='utf-8'))
 if d.get('valid_for_current_brief') is False:
     raise SystemExit('Iteration 01 is superseded by owner corrections; do not issue current fit claims from its proxy inventory.')
@@ -22,6 +23,10 @@ def overlap(a,b):
 check('Architectural baseline byte-for-byte unchanged',hashlib.sha256((ROOT/'model'/'223C_Existing_Shell_v02.blend').read_bytes()).hexdigest()==d['baseline_sha256'],d['baseline_sha256'])
 for name,v in d['variants'].items():
     its=v['items'];room=lambda r:[i for i in its if i['room']==r]
+    if REV3:
+        cs=[i for i in room('living') if i['purpose']=='storage']
+        limits=[rect(i['polygon']) for i in cs]
+        check(name+' living cupboards remain within backing wall',all(r[1]>=5.55 and r[3]<=8.486667 for r in limits),{'wall_y':[5.55,8.486667],'cupboard_y':[[r[1],r[3]] for r in limits]})
     study=room('study');storage=[i for i in study if i['purpose']=='storage' or (REV2 and i['purpose']=='equipment')]
     span_min=min(rect(i['polygon'])[1] for i in storage);span_max=max(rect(i['polygon'])[3] for i in storage)
     check(name+' study storage within authorised 2200 mm',abs(span_min-6.68)<1e-5 and abs(span_max-8.88)<1e-5 and abs(span_max-span_min-2.2)<1e-5,{'start_y':span_min,'end_y':span_max,'length_mm':(span_max-span_min)*1000})

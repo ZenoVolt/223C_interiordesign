@@ -1,0 +1,2468 @@
+{
+  "revision": 3,
+  "new_furniture_finish": "American walnut",
+  "valid_for_current_brief": true,
+  "feasibility_status": "conditional on day/night cupboard access trade-off and final product/site checks",
+  "baseline_sha256": "19384b90381eda3059a4c44cf9e691bbb4d801723dbfc2ab9452b82d4ef81a72",
+  "units": "metres",
+  "variants": {
+    "A-with-tv": {
+      "items": [
+        {
+          "name": "FIXED SLIDING WARDROBE",
+          "room": "girls",
+          "centre": [
+            10.14,
+            5.85
+          ],
+          "dims": [
+            1.8666660000000004,
+            0.6,
+            2.25
+          ],
+          "angle": 0,
+          "polygon": [
+            [
+              9.206667,
+              5.55
+            ],
+            [
+              11.073333000000002,
+              5.55
+            ],
+            [
+              11.073333000000002,
+              6.1499999999999995
+            ],
+            [
+              9.206667,
+              6.1499999999999995
+            ]
+          ],
+          "colour": "#d1d0c6",
+          "purpose": "fixed",
+          "note": "600 mm depth and sliding doors confirmed; width/height/switch strip approximated"
+        },
+        {
+          "name": "REUSE girls cupboard 1",
+          "room": "girls",
+          "centre": [
+            8.38,
+            7.13
+          ],
+          "dims": [
+            0.9,
+            0.4,
+            2
+          ],
+          "angle": 90,
+          "polygon": [
+            [
+              8.58,
+              6.68
+            ],
+            [
+              8.58,
+              7.58
+            ],
+            [
+              8.180000000000001,
+              7.58
+            ],
+            [
+              8.180000000000001,
+              6.68
+            ]
+          ],
+          "colour": "#b9c0bf",
+          "purpose": "storage",
+          "note": ""
+        },
+        {
+          "name": "REUSE girls cupboard 2",
+          "room": "girls",
+          "centre": [
+            8.38,
+            8.03
+          ],
+          "dims": [
+            0.9,
+            0.4,
+            2
+          ],
+          "angle": 90,
+          "polygon": [
+            [
+              8.58,
+              7.579999999999999
+            ],
+            [
+              8.58,
+              8.479999999999999
+            ],
+            [
+              8.180000000000001,
+              8.479999999999999
+            ],
+            [
+              8.180000000000001,
+              7.579999999999999
+            ]
+          ],
+          "colour": "#b9c0bf",
+          "purpose": "storage",
+          "note": ""
+        },
+        {
+          "name": "LOW PULL-OUT BED 2050 x 950",
+          "room": "girls",
+          "centre": [
+            10.275,
+            8.085
+          ],
+          "dims": [
+            0.95,
+            2.05,
+            0.55
+          ],
+          "angle": 0,
+          "polygon": [
+            [
+              9.8,
+              7.0600000000000005
+            ],
+            [
+              10.75,
+              7.0600000000000005
+            ],
+            [
+              10.75,
+              9.110000000000001
+            ],
+            [
+              9.8,
+              9.110000000000001
+            ]
+          ],
+          "colour": "#d5c29e",
+          "purpose": "furniture",
+          "note": ""
+        },
+        {
+          "name": "PULL-OUT lower mattress",
+          "room": "girls",
+          "centre": [
+            9.325,
+            8.085
+          ],
+          "dims": [
+            0.95,
+            2.05,
+            0.27
+          ],
+          "angle": 0,
+          "polygon": [
+            [
+              8.85,
+              7.0600000000000005
+            ],
+            [
+              9.799999999999999,
+              7.0600000000000005
+            ],
+            [
+              9.799999999999999,
+              9.110000000000001
+            ],
+            [
+              8.85,
+              9.110000000000001
+            ]
+          ],
+          "colour": "#a1b5a3",
+          "purpose": "trundle_open",
+          "note": "Shown in night view; 950 mm extension"
+        },
+        {
+          "name": "REUSE study cupboard",
+          "room": "study",
+          "centre": [
+            7.823333,
+            7.13
+          ],
+          "dims": [
+            0.9,
+            0.4,
+            2
+          ],
+          "angle": -90,
+          "polygon": [
+            [
+              7.623333,
+              7.58
+            ],
+            [
+              7.623333,
+              6.68
+            ],
+            [
+              8.023333,
+              6.68
+            ],
+            [
+              8.023333,
+              7.58
+            ]
+          ],
+          "colour": "#b9c0bf",
+          "purpose": "storage",
+          "note": ""
+        },
+        {
+          "name": "PACKOUT stack 1 / 2000 H",
+          "room": "study",
+          "centre": [
+            7.798333,
+            7.93
+          ],
+          "dims": [
+            0.6,
+            0.45,
+            2
+          ],
+          "angle": -90,
+          "polygon": [
+            [
+              7.573333000000001,
+              8.23
+            ],
+            [
+              7.573333000000001,
+              7.63
+            ],
+            [
+              8.023333000000001,
+              7.63
+            ],
+            [
+              8.023333000000001,
+              8.23
+            ]
+          ],
+          "colour": "#963d32",
+          "purpose": "equipment",
+          "note": "Freestanding, 2000 H owner-confirmed; 600 x 450 footprint allowance based on Milwaukee dimensions"
+        },
+        {
+          "name": "PACKOUT stack 2 / 2000 H",
+          "room": "study",
+          "centre": [
+            7.798333,
+            8.58
+          ],
+          "dims": [
+            0.6,
+            0.45,
+            2
+          ],
+          "angle": -90,
+          "polygon": [
+            [
+              7.573333000000001,
+              8.88
+            ],
+            [
+              7.573333000000001,
+              8.28
+            ],
+            [
+              8.023333000000001,
+              8.28
+            ],
+            [
+              8.023333000000001,
+              8.88
+            ]
+          ],
+          "colour": "#963d32",
+          "purpose": "equipment",
+          "note": "Freestanding, 2000 H owner-confirmed; 600 x 450 footprint allowance based on Milwaukee dimensions"
+        },
+        {
+          "name": "NEW toy cupboard 2000 x 500",
+          "room": "living",
+          "centre": [
+            4.79,
+            7.44
+          ],
+          "dims": [
+            2,
+            0.5,
+            0.9
+          ],
+          "angle": -90,
+          "polygon": [
+            [
+              4.54,
+              8.440000000000001
+            ],
+            [
+              4.54,
+              6.44
+            ],
+            [
+              5.04,
+              6.44
+            ],
+            [
+              5.04,
+              8.440000000000001
+            ]
+          ],
+          "colour": "#d4c19f",
+          "purpose": "storage",
+          "note": ""
+        },
+        {
+          "name": "NEW archive cupboard 800 x 500",
+          "room": "living",
+          "centre": [
+            4.79,
+            5.99
+          ],
+          "dims": [
+            0.8,
+            0.5,
+            2.1
+          ],
+          "angle": -90,
+          "polygon": [
+            [
+              4.54,
+              6.390000000000001
+            ],
+            [
+              4.54,
+              5.59
+            ],
+            [
+              5.04,
+              5.59
+            ],
+            [
+              5.04,
+              6.390000000000001
+            ]
+          ],
+          "colour": "#d4c19f",
+          "purpose": "storage",
+          "note": ""
+        },
+        {
+          "name": "RETAINED R6 NAS",
+          "room": "living",
+          "centre": [
+            0.2365,
+            4.48
+          ],
+          "dims": [
+            0.233,
+            0.543,
+            0.465
+          ],
+          "angle": 0,
+          "polygon": [
+            [
+              0.11999999999999998,
+              4.208500000000001
+            ],
+            [
+              0.353,
+              4.208500000000001
+            ],
+            [
+              0.353,
+              4.7515
+            ],
+            [
+              0.11999999999999998,
+              4.7515
+            ]
+          ],
+          "colour": "#434849",
+          "purpose": "furniture",
+          "note": ""
+        },
+        {
+          "name": "SOFA 2500 x 1000",
+          "room": "living",
+          "centre": [
+            0.7,
+            6.35
+          ],
+          "dims": [
+            1,
+            2.5,
+            0.86
+          ],
+          "angle": 0,
+          "polygon": [
+            [
+              0.19999999999999996,
+              5.1
+            ],
+            [
+              1.2,
+              5.1
+            ],
+            [
+              1.2,
+              7.6
+            ],
+            [
+              0.19999999999999996,
+              7.6
+            ]
+          ],
+          "colour": "#c9bca5",
+          "purpose": "furniture",
+          "note": "Three seat proxy; faces local +X"
+        },
+        {
+          "name": "RETAINED RECLINER proxy",
+          "room": "living",
+          "centre": [
+            2.45,
+            7.8
+          ],
+          "dims": [
+            0.88,
+            0.88,
+            1.05
+          ],
+          "angle": -22,
+          "polygon": [
+            [
+              1.8772122028876126,
+              7.556866005093615
+            ],
+            [
+              2.6931339949063853,
+              7.227212202887611
+            ],
+            [
+              3.0227877971123878,
+              8.043133994906384
+            ],
+            [
+              2.206866005093615,
+              8.372787797112387
+            ]
+          ],
+          "colour": "#b88b60",
+          "purpose": "furniture",
+          "note": "Exact Stressless model unknown"
+        },
+        {
+          "name": "RETAINED FOOTSTOOL proxy",
+          "room": "living",
+          "centre": [
+            3.25,
+            7.48
+          ],
+          "dims": [
+            0.62,
+            0.52,
+            0.43
+          ],
+          "angle": -22,
+          "polygon": [
+            [
+              2.865175290796159,
+              7.355060241771568
+            ],
+            [
+              3.440029280627567,
+              7.1228041538537035
+            ],
+            [
+              3.634824709203841,
+              7.604939758228433
+            ],
+            [
+              3.059970719372433,
+              7.837195846146297
+            ]
+          ],
+          "colour": "#b88b60",
+          "purpose": "furniture",
+          "note": ""
+        },
+        {
+          "name": "TV 65-inch PROXY",
+          "room": "living",
+          "centre": [
+            4.84,
+            7.44
+          ],
+          "dims": [
+            0.12,
+            1.44,
+            1.76
+          ],
+          "angle": 0,
+          "polygon": [
+            [
+              4.78,
+              6.720000000000001
+            ],
+            [
+              4.8999999999999995,
+              6.720000000000001
+            ],
+            [
+              4.8999999999999995,
+              8.16
+            ],
+            [
+              4.78,
+              8.16
+            ]
+          ],
+          "colour": "#465758",
+          "purpose": "screen",
+          "note": ""
+        },
+        {
+          "name": "SMALL SIDE TABLE",
+          "room": "living",
+          "centre": [
+            1.16,
+            7.91
+          ],
+          "dims": [
+            0.38,
+            0.38,
+            0.48
+          ],
+          "angle": 0,
+          "polygon": [
+            [
+              0.97,
+              7.72
+            ],
+            [
+              1.3499999999999999,
+              7.72
+            ],
+            [
+              1.3499999999999999,
+              8.1
+            ],
+            [
+              0.97,
+              8.1
+            ]
+          ],
+          "colour": "#aa8a5d",
+          "purpose": "furniture",
+          "note": ""
+        }
+      ],
+      "walls": [
+        {
+          "name": "Living north | solid 1",
+          "rect": [
+            0.0,
+            8.486666679382324,
+            0.5249999761581421,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Living north | below 2320 mm",
+          "rect": [
+            0.5249999761581421,
+            8.486666679382324,
+            2.8449997901916504,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Living north | above 2320 mm",
+          "rect": [
+            0.5249999761581421,
+            8.486666679382324,
+            2.8449997901916504,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Living north | solid 2",
+          "rect": [
+            2.8450000286102295,
+            8.486666679382324,
+            3.5950000286102295,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Living north | below 1200 mm",
+          "rect": [
+            3.5950002670288086,
+            8.486666679382324,
+            4.795000076293945,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Living north | above 1200 mm",
+          "rect": [
+            3.5950002670288086,
+            8.486666679382324,
+            4.795000076293945,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Living north | solid end",
+          "rect": [
+            4.794999599456787,
+            8.486666679382324,
+            5.073333263397217,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Study north | solid 1",
+          "rect": [
+            5.353333473205566,
+            9.15999984741211,
+            5.793333053588867,
+            9.253334045410156
+          ]
+        },
+        {
+          "name": "Study north | below 1780 mm",
+          "rect": [
+            5.793333530426025,
+            9.15999984741211,
+            7.573333263397217,
+            9.253334045410156
+          ]
+        },
+        {
+          "name": "Study north | above 1780 mm",
+          "rect": [
+            5.793333530426025,
+            9.15999984741211,
+            7.573333263397217,
+            9.253334045410156
+          ]
+        },
+        {
+          "name": "Study north | solid end",
+          "rect": [
+            7.573333263397217,
+            9.15999984741211,
+            8.023333549499512,
+            9.253334045410156
+          ]
+        },
+        {
+          "name": "Girls north | solid 1",
+          "rect": [
+            8.133333206176758,
+            9.15999984741211,
+            8.333333969116211,
+            9.253334045410156
+          ]
+        },
+        {
+          "name": "Girls north | below 1785 mm",
+          "rect": [
+            8.333333015441895,
+            9.15999984741211,
+            10.118332862854004,
+            9.253334045410156
+          ]
+        },
+        {
+          "name": "Girls north | above 1785 mm",
+          "rect": [
+            8.333333015441895,
+            9.15999984741211,
+            10.118332862854004,
+            9.253334045410156
+          ]
+        },
+        {
+          "name": "Girls north | solid end",
+          "rect": [
+            10.11833381652832,
+            9.15999984741211,
+            10.803333282470703,
+            9.253334045410156
+          ]
+        },
+        {
+          "name": "Master north | solid 1",
+          "rect": [
+            11.173333168029785,
+            8.486666679382324,
+            11.458333015441895,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Master north | below 1795 mm",
+          "rect": [
+            11.458333015441895,
+            8.486666679382324,
+            13.25333309173584,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Master north | above 1795 mm",
+          "rect": [
+            11.458333015441895,
+            8.486666679382324,
+            13.25333309173584,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Master north | solid end",
+          "rect": [
+            13.25333309173584,
+            8.486666679382324,
+            14.023333549499512,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Living west concrete | solid end",
+          "rect": [
+            -0.11999999731779099,
+            3.446666717529297,
+            0.0,
+            8.486666679382324
+          ]
+        },
+        {
+          "name": "Study west upper concrete | solid end",
+          "rect": [
+            5.073333263397217,
+            6.586667060852051,
+            5.353332996368408,
+            9.133333206176758
+          ]
+        },
+        {
+          "name": "Girls east upper concrete | solid end",
+          "rect": [
+            10.806666374206543,
+            6.586667060852051,
+            11.073332786560059,
+            9.133333206176758
+          ]
+        },
+        {
+          "name": "Master east concrete | solid end",
+          "rect": [
+            14.026666641235352,
+            4.266666412353516,
+            14.273332595825195,
+            8.486666679382324
+          ]
+        },
+        {
+          "name": "Master south concrete | solid end",
+          "rect": [
+            11.65333366394043,
+            4.1533331871032715,
+            14.026666641235352,
+            4.266666889190674
+          ]
+        },
+        {
+          "name": "Bathrooms west concrete | solid end",
+          "rect": [
+            8.0,
+            2.4466664791107178,
+            8.366666793823242,
+            4.266666412353516
+          ]
+        },
+        {
+          "name": "Bathrooms east concrete | solid end",
+          "rect": [
+            12.493332862854004,
+            2.446666717529297,
+            12.613333702087402,
+            4.1533331871032715
+          ]
+        },
+        {
+          "name": "Maid north concrete | solid end",
+          "rect": [
+            0.0,
+            3.2799999713897705,
+            1.5333333015441895,
+            3.4466664791107178
+          ]
+        },
+        {
+          "name": "Maid west concrete | solid end",
+          "rect": [
+            -0.12000000476837158,
+            0.9950000047683716,
+            0.1066666692495346,
+            3.320000171661377
+          ]
+        },
+        {
+          "name": "Maid east concrete | solid 1",
+          "rect": [
+            1.346666693687439,
+            2.684999942779541,
+            1.533333420753479,
+            3.2800002098083496
+          ]
+        },
+        {
+          "name": "Maid east concrete | above maid hinged door \u2014 inferred",
+          "rect": [
+            1.346666693687439,
+            1.9749999046325684,
+            1.533333420753479,
+            2.684999942779541
+          ]
+        },
+        {
+          "name": "Maid east concrete | solid end",
+          "rect": [
+            1.346666693687439,
+            0.9950000047683716,
+            1.533333420753479,
+            1.975000023841858
+          ]
+        },
+        {
+          "name": "Maid south concrete | solid end",
+          "rect": [
+            0.0,
+            0.8333333730697632,
+            1.5333333015441895,
+            0.9950000047683716
+          ]
+        },
+        {
+          "name": "Entrance west nib concrete | solid end",
+          "rect": [
+            1.5333333015441895,
+            0.9333333969116211,
+            1.7200000286102295,
+            1.7000000476837158
+          ]
+        },
+        {
+          "name": "Entrance south concrete | solid 1",
+          "rect": [
+            1.5333333015441895,
+            0.8333333134651184,
+            1.7599999904632568,
+            0.9333333373069763
+          ]
+        },
+        {
+          "name": "Entrance south concrete | above main entrance 1040 mm",
+          "rect": [
+            1.7599999904632568,
+            0.8333333134651184,
+            2.799999952316284,
+            0.9333333373069763
+          ]
+        },
+        {
+          "name": "Entrance south concrete | solid end",
+          "rect": [
+            2.799999952316284,
+            0.8333333134651184,
+            3.240000009536743,
+            0.9333333373069763
+          ]
+        },
+        {
+          "name": "Kitchen west lower concrete | solid end",
+          "rect": [
+            3.240000009536743,
+            0.0,
+            3.5266668796539307,
+            1.59333336353302
+          ]
+        },
+        {
+          "name": "Kitchen south concrete | solid end",
+          "rect": [
+            3.5266666412353516,
+            -0.11999999731779099,
+            8.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Service yard east concrete | below three-panel sliding window a",
+          "rect": [
+            9.426666259765625,
+            0.0,
+            9.546667098999023,
+            2.2666666507720947
+          ]
+        },
+        {
+          "name": "Service yard east concrete | above three-panel sliding window a",
+          "rect": [
+            9.426666259765625,
+            0.0,
+            9.546667098999023,
+            2.2666666507720947
+          ]
+        },
+        {
+          "name": "Study / girls central concrete nib | solid end",
+          "rect": [
+            7.90000057220459,
+            5.373332977294922,
+            8.255000114440918,
+            5.513333320617676
+          ]
+        },
+        {
+          "name": "Study west lower internal | solid end",
+          "rect": [
+            5.073333740234375,
+            5.549999713897705,
+            5.183333396911621,
+            6.586666584014893
+          ]
+        },
+        {
+          "name": "Study south internal | solid end",
+          "rect": [
+            5.073333740234375,
+            5.449999809265137,
+            6.946666717529297,
+            5.550000190734863
+          ]
+        },
+        {
+          "name": "Study / girls dividing internal | solid end",
+          "rect": [
+            8.023332595825195,
+            5.513333320617676,
+            8.133333206176758,
+            9.15999984741211
+          ]
+        },
+        {
+          "name": "Girls south internal | solid end",
+          "rect": [
+            9.206665992736816,
+            5.449999809265137,
+            11.173333168029785,
+            5.550000190734863
+          ]
+        },
+        {
+          "name": "Girls / master upper internal lining | solid end",
+          "rect": [
+            11.073332786560059,
+            6.586667060852051,
+            11.173333168029785,
+            8.486666679382324
+          ]
+        },
+        {
+          "name": "Girls / master lower internal | solid end",
+          "rect": [
+            11.073332786560059,
+            5.549999713897705,
+            11.173333168029785,
+            6.586666584014893
+          ]
+        },
+        {
+          "name": "Master entry door header | above master entry door centred on 1",
+          "rect": [
+            9.645833015441895,
+            4.266666412353516,
+            9.745833396911621,
+            5.449999809265137
+          ]
+        },
+        {
+          "name": "Study access header | above study door",
+          "rect": [
+            6.946666717529297,
+            5.449999809265137,
+            7.899999618530273,
+            5.550000190734863
+          ]
+        },
+        {
+          "name": "Girls access header | above girls door",
+          "rect": [
+            8.255000114440918,
+            5.449999809265137,
+            9.206665992736816,
+            5.550000190734863
+          ]
+        },
+        {
+          "name": "Bathroom 1 north internal | above bathroom 1 door",
+          "rect": [
+            8.366666793823242,
+            4.1533331871032715,
+            9.386667251586914,
+            4.266666889190674
+          ]
+        },
+        {
+          "name": "Bathroom 1 north internal | solid end",
+          "rect": [
+            9.386666297912598,
+            4.1533331871032715,
+            10.166666984558105,
+            4.266666889190674
+          ]
+        },
+        {
+          "name": "Bathroom 2 north internal | solid 1",
+          "rect": [
+            10.273333549499512,
+            4.1533331871032715,
+            10.800000190734863,
+            4.266666889190674
+          ]
+        },
+        {
+          "name": "Bathroom 2 north internal | above bathroom 2 door",
+          "rect": [
+            10.800000190734863,
+            4.1533331871032715,
+            11.653332710266113,
+            4.266666889190674
+          ]
+        },
+        {
+          "name": "Bathroom 2 north internal | solid end",
+          "rect": [
+            11.65333366394043,
+            4.1533331871032715,
+            12.49333381652832,
+            4.266666889190674
+          ]
+        },
+        {
+          "name": "Bathroom dividing internal | solid end",
+          "rect": [
+            10.166666984558105,
+            2.3399999141693115,
+            10.273333549499512,
+            4.1533331871032715
+          ]
+        },
+        {
+          "name": "Bathroom 1 south internal | solid 1",
+          "rect": [
+            8.366665840148926,
+            2.3400001525878906,
+            9.566666603088379,
+            2.446666717529297
+          ]
+        },
+        {
+          "name": "Bathroom 1 south internal | below bathroom 1 window 600 mm",
+          "rect": [
+            9.566666603088379,
+            2.3400001525878906,
+            10.166666984558105,
+            2.446666717529297
+          ]
+        },
+        {
+          "name": "Bathroom 1 south internal | above bathroom 1 window 600 mm",
+          "rect": [
+            9.566666603088379,
+            2.3400001525878906,
+            10.166666984558105,
+            2.446666717529297
+          ]
+        },
+        {
+          "name": "Bathroom 2 south internal | solid 1",
+          "rect": [
+            10.273333549499512,
+            2.3400001525878906,
+            10.833333015441895,
+            2.446666717529297
+          ]
+        },
+        {
+          "name": "Bathroom 2 south internal | below bathroom 2 window \u2014 inferre",
+          "rect": [
+            10.833333969116211,
+            2.3400001525878906,
+            11.643333435058594,
+            2.446666717529297
+          ]
+        },
+        {
+          "name": "Bathroom 2 south internal | above bathroom 2 window \u2014 inferre",
+          "rect": [
+            10.833333969116211,
+            2.3400001525878906,
+            11.643333435058594,
+            2.446666717529297
+          ]
+        },
+        {
+          "name": "Bathroom 2 south internal | solid end",
+          "rect": [
+            11.643333435058594,
+            2.3400001525878906,
+            12.49333381652832,
+            2.446666717529297
+          ]
+        },
+        {
+          "name": "Kitchen north 930 mm return | solid end",
+          "rect": [
+            3.240000009536743,
+            1.596666693687439,
+            3.373333215713501,
+            2.5266666412353516
+          ]
+        },
+        {
+          "name": "Kitchen north 2388 mm FIXED WALL | solid end",
+          "rect": [
+            5.613333702087402,
+            2.4533333778381348,
+            7.999899864196777,
+            2.5266666412353516
+          ]
+        },
+        {
+          "name": "Kitchen sliding-door header | above three-panel sliding door ",
+          "rect": [
+            3.4000000953674316,
+            2.4533333778381348,
+            5.613333225250244,
+            2.5266666412353516
+          ]
+        },
+        {
+          "name": "Service yard north internal | solid end",
+          "rect": [
+            8.119999885559082,
+            2.2666666507720947,
+            9.426667213439941,
+            2.3333332538604736
+          ]
+        },
+        {
+          "name": "Kitchen / service yard north return | solid end",
+          "rect": [
+            8.0,
+            1.6366666555404663,
+            8.120000839233398,
+            2.3333332538604736
+          ]
+        },
+        {
+          "name": "Kitchen / service yard south return | solid end",
+          "rect": [
+            8.0,
+            0.0,
+            8.120000839233398,
+            0.6666666865348816
+          ]
+        },
+        {
+          "name": "Service yard south internal | solid end",
+          "rect": [
+            8.119999885559082,
+            -0.11999999731779099,
+            9.426667213439941,
+            0.0
+          ]
+        }
+      ],
+      "rooms": {
+        "living": [
+          0,
+          3.446667,
+          5.073333,
+          8.486667
+        ],
+        "study": [
+          5.353333,
+          5.55,
+          8.023333,
+          9.16
+        ],
+        "girls": [
+          8.133333,
+          5.55,
+          11.073333,
+          9.16
+        ]
+      },
+      "play_rect": [
+        1.5,
+        5.25,
+        3.8,
+        6.95
+      ],
+      "study_allowed_segment": [
+        6.68,
+        8.88
+      ],
+      "checks": {
+        "girls_night_side_gap_mm": 270,
+        "girls_day_cupboard_to_bed_gap_mm": 1220,
+        "girls_wardrobe_to_bed_foot_mm": 910,
+        "study_cupboard_plus_stack_allowances_mm": 2100,
+        "study_spacing_allowance_mm": 100
+      },
+      "storage": {
+        "existing_cupboards": 3,
+        "samla_contents_boxes": 21,
+        "toy_nominal_l": 450,
+        "study_box_nominal_l": 495,
+        "new_living_toy_inner_envelope_l": 621,
+        "new_living_archive_inner_envelope_l": 588,
+        "status": "Content allocation retained; actual shelf/contents capacity unresolved. Metal cupboard doors not fully usable with trundle open."
+      }
+    },
+    "B-without-tv": {
+      "items": [
+        {
+          "name": "FIXED SLIDING WARDROBE",
+          "room": "girls",
+          "centre": [
+            10.14,
+            5.85
+          ],
+          "dims": [
+            1.8666660000000004,
+            0.6,
+            2.25
+          ],
+          "angle": 0,
+          "polygon": [
+            [
+              9.206667,
+              5.55
+            ],
+            [
+              11.073333000000002,
+              5.55
+            ],
+            [
+              11.073333000000002,
+              6.1499999999999995
+            ],
+            [
+              9.206667,
+              6.1499999999999995
+            ]
+          ],
+          "colour": "#d1d0c6",
+          "purpose": "fixed",
+          "note": "600 mm depth and sliding doors confirmed; width/height/switch strip approximated"
+        },
+        {
+          "name": "REUSE girls cupboard 1",
+          "room": "girls",
+          "centre": [
+            8.38,
+            7.13
+          ],
+          "dims": [
+            0.9,
+            0.4,
+            2
+          ],
+          "angle": 90,
+          "polygon": [
+            [
+              8.58,
+              6.68
+            ],
+            [
+              8.58,
+              7.58
+            ],
+            [
+              8.180000000000001,
+              7.58
+            ],
+            [
+              8.180000000000001,
+              6.68
+            ]
+          ],
+          "colour": "#b9c0bf",
+          "purpose": "storage",
+          "note": ""
+        },
+        {
+          "name": "REUSE girls cupboard 2",
+          "room": "girls",
+          "centre": [
+            8.38,
+            8.03
+          ],
+          "dims": [
+            0.9,
+            0.4,
+            2
+          ],
+          "angle": 90,
+          "polygon": [
+            [
+              8.58,
+              7.579999999999999
+            ],
+            [
+              8.58,
+              8.479999999999999
+            ],
+            [
+              8.180000000000001,
+              8.479999999999999
+            ],
+            [
+              8.180000000000001,
+              7.579999999999999
+            ]
+          ],
+          "colour": "#b9c0bf",
+          "purpose": "storage",
+          "note": ""
+        },
+        {
+          "name": "LOW PULL-OUT BED 2050 x 950",
+          "room": "girls",
+          "centre": [
+            10.275,
+            8.085
+          ],
+          "dims": [
+            0.95,
+            2.05,
+            0.55
+          ],
+          "angle": 0,
+          "polygon": [
+            [
+              9.8,
+              7.0600000000000005
+            ],
+            [
+              10.75,
+              7.0600000000000005
+            ],
+            [
+              10.75,
+              9.110000000000001
+            ],
+            [
+              9.8,
+              9.110000000000001
+            ]
+          ],
+          "colour": "#d5c29e",
+          "purpose": "furniture",
+          "note": ""
+        },
+        {
+          "name": "PULL-OUT lower mattress",
+          "room": "girls",
+          "centre": [
+            9.325,
+            8.085
+          ],
+          "dims": [
+            0.95,
+            2.05,
+            0.27
+          ],
+          "angle": 0,
+          "polygon": [
+            [
+              8.85,
+              7.0600000000000005
+            ],
+            [
+              9.799999999999999,
+              7.0600000000000005
+            ],
+            [
+              9.799999999999999,
+              9.110000000000001
+            ],
+            [
+              8.85,
+              9.110000000000001
+            ]
+          ],
+          "colour": "#a1b5a3",
+          "purpose": "trundle_open",
+          "note": "Shown in night view; 950 mm extension"
+        },
+        {
+          "name": "REUSE study cupboard",
+          "room": "study",
+          "centre": [
+            7.823333,
+            7.13
+          ],
+          "dims": [
+            0.9,
+            0.4,
+            2
+          ],
+          "angle": -90,
+          "polygon": [
+            [
+              7.623333,
+              7.58
+            ],
+            [
+              7.623333,
+              6.68
+            ],
+            [
+              8.023333,
+              6.68
+            ],
+            [
+              8.023333,
+              7.58
+            ]
+          ],
+          "colour": "#b9c0bf",
+          "purpose": "storage",
+          "note": ""
+        },
+        {
+          "name": "PACKOUT stack 1 / 2000 H",
+          "room": "study",
+          "centre": [
+            7.798333,
+            7.93
+          ],
+          "dims": [
+            0.6,
+            0.45,
+            2
+          ],
+          "angle": -90,
+          "polygon": [
+            [
+              7.573333000000001,
+              8.23
+            ],
+            [
+              7.573333000000001,
+              7.63
+            ],
+            [
+              8.023333000000001,
+              7.63
+            ],
+            [
+              8.023333000000001,
+              8.23
+            ]
+          ],
+          "colour": "#963d32",
+          "purpose": "equipment",
+          "note": "Freestanding, 2000 H owner-confirmed; 600 x 450 footprint allowance based on Milwaukee dimensions"
+        },
+        {
+          "name": "PACKOUT stack 2 / 2000 H",
+          "room": "study",
+          "centre": [
+            7.798333,
+            8.58
+          ],
+          "dims": [
+            0.6,
+            0.45,
+            2
+          ],
+          "angle": -90,
+          "polygon": [
+            [
+              7.573333000000001,
+              8.88
+            ],
+            [
+              7.573333000000001,
+              8.28
+            ],
+            [
+              8.023333000000001,
+              8.28
+            ],
+            [
+              8.023333000000001,
+              8.88
+            ]
+          ],
+          "colour": "#963d32",
+          "purpose": "equipment",
+          "note": "Freestanding, 2000 H owner-confirmed; 600 x 450 footprint allowance based on Milwaukee dimensions"
+        },
+        {
+          "name": "NEW toy cupboard 2000 x 500",
+          "room": "living",
+          "centre": [
+            4.79,
+            7.44
+          ],
+          "dims": [
+            2,
+            0.5,
+            0.9
+          ],
+          "angle": -90,
+          "polygon": [
+            [
+              4.54,
+              8.440000000000001
+            ],
+            [
+              4.54,
+              6.44
+            ],
+            [
+              5.04,
+              6.44
+            ],
+            [
+              5.04,
+              8.440000000000001
+            ]
+          ],
+          "colour": "#d4c19f",
+          "purpose": "storage",
+          "note": ""
+        },
+        {
+          "name": "NEW archive cupboard 800 x 500",
+          "room": "living",
+          "centre": [
+            4.79,
+            5.99
+          ],
+          "dims": [
+            0.8,
+            0.5,
+            2.1
+          ],
+          "angle": -90,
+          "polygon": [
+            [
+              4.54,
+              6.390000000000001
+            ],
+            [
+              4.54,
+              5.59
+            ],
+            [
+              5.04,
+              5.59
+            ],
+            [
+              5.04,
+              6.390000000000001
+            ]
+          ],
+          "colour": "#d4c19f",
+          "purpose": "storage",
+          "note": ""
+        },
+        {
+          "name": "RETAINED R6 NAS",
+          "room": "living",
+          "centre": [
+            0.2365,
+            4.48
+          ],
+          "dims": [
+            0.233,
+            0.543,
+            0.465
+          ],
+          "angle": 0,
+          "polygon": [
+            [
+              0.11999999999999998,
+              4.208500000000001
+            ],
+            [
+              0.353,
+              4.208500000000001
+            ],
+            [
+              0.353,
+              4.7515
+            ],
+            [
+              0.11999999999999998,
+              4.7515
+            ]
+          ],
+          "colour": "#434849",
+          "purpose": "furniture",
+          "note": ""
+        },
+        {
+          "name": "SOFA 2500 x 1000",
+          "room": "living",
+          "centre": [
+            2.2,
+            5.4
+          ],
+          "dims": [
+            1,
+            2.5,
+            0.86
+          ],
+          "angle": 90,
+          "polygon": [
+            [
+              3.45,
+              4.9
+            ],
+            [
+              3.45,
+              5.9
+            ],
+            [
+              0.9500000000000002,
+              5.9
+            ],
+            [
+              0.9500000000000002,
+              4.9
+            ]
+          ],
+          "colour": "#c9bca5",
+          "purpose": "furniture",
+          "note": "Three seat proxy; faces local +X"
+        },
+        {
+          "name": "RETAINED RECLINER proxy",
+          "room": "living",
+          "centre": [
+            0.85,
+            7.8
+          ],
+          "dims": [
+            0.88,
+            0.88,
+            1.05
+          ],
+          "angle": -44,
+          "polygon": [
+            [
+              0.22784080484903463,
+              7.789140170852952
+            ],
+            [
+              0.8608598291470477,
+              7.177840804849034
+            ],
+            [
+              1.4721591951509654,
+              7.810859829147048
+            ],
+            [
+              0.8391401708529522,
+              8.422159195150964
+            ]
+          ],
+          "colour": "#b88b60",
+          "purpose": "furniture",
+          "note": "Exact Stressless model unknown"
+        },
+        {
+          "name": "RETAINED FOOTSTOOL proxy",
+          "room": "living",
+          "centre": [
+            1.5,
+            7.17
+          ],
+          "dims": [
+            0.62,
+            0.52,
+            0.43
+          ],
+          "angle": -44,
+          "polygon": [
+            [
+              1.096393485575679,
+              7.19831574675424
+            ],
+            [
+              1.5423841617856426,
+              6.767627557069661
+            ],
+            [
+              1.903606514424321,
+              7.14168425324576
+            ],
+            [
+              1.4576158382143574,
+              7.572372442930339
+            ]
+          ],
+          "colour": "#b88b60",
+          "purpose": "furniture",
+          "note": ""
+        },
+        {
+          "name": "SMALL SIDE TABLE",
+          "room": "living",
+          "centre": [
+            0.49,
+            6.85
+          ],
+          "dims": [
+            0.38,
+            0.38,
+            0.48
+          ],
+          "angle": 0,
+          "polygon": [
+            [
+              0.3,
+              6.659999999999999
+            ],
+            [
+              0.6799999999999999,
+              6.659999999999999
+            ],
+            [
+              0.6799999999999999,
+              7.04
+            ],
+            [
+              0.3,
+              7.04
+            ]
+          ],
+          "colour": "#aa8a5d",
+          "purpose": "furniture",
+          "note": ""
+        }
+      ],
+      "walls": [
+        {
+          "name": "Living north | solid 1",
+          "rect": [
+            0.0,
+            8.486666679382324,
+            0.5249999761581421,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Living north | below 2320 mm",
+          "rect": [
+            0.5249999761581421,
+            8.486666679382324,
+            2.8449997901916504,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Living north | above 2320 mm",
+          "rect": [
+            0.5249999761581421,
+            8.486666679382324,
+            2.8449997901916504,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Living north | solid 2",
+          "rect": [
+            2.8450000286102295,
+            8.486666679382324,
+            3.5950000286102295,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Living north | below 1200 mm",
+          "rect": [
+            3.5950002670288086,
+            8.486666679382324,
+            4.795000076293945,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Living north | above 1200 mm",
+          "rect": [
+            3.5950002670288086,
+            8.486666679382324,
+            4.795000076293945,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Living north | solid end",
+          "rect": [
+            4.794999599456787,
+            8.486666679382324,
+            5.073333263397217,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Study north | solid 1",
+          "rect": [
+            5.353333473205566,
+            9.15999984741211,
+            5.793333053588867,
+            9.253334045410156
+          ]
+        },
+        {
+          "name": "Study north | below 1780 mm",
+          "rect": [
+            5.793333530426025,
+            9.15999984741211,
+            7.573333263397217,
+            9.253334045410156
+          ]
+        },
+        {
+          "name": "Study north | above 1780 mm",
+          "rect": [
+            5.793333530426025,
+            9.15999984741211,
+            7.573333263397217,
+            9.253334045410156
+          ]
+        },
+        {
+          "name": "Study north | solid end",
+          "rect": [
+            7.573333263397217,
+            9.15999984741211,
+            8.023333549499512,
+            9.253334045410156
+          ]
+        },
+        {
+          "name": "Girls north | solid 1",
+          "rect": [
+            8.133333206176758,
+            9.15999984741211,
+            8.333333969116211,
+            9.253334045410156
+          ]
+        },
+        {
+          "name": "Girls north | below 1785 mm",
+          "rect": [
+            8.333333015441895,
+            9.15999984741211,
+            10.118332862854004,
+            9.253334045410156
+          ]
+        },
+        {
+          "name": "Girls north | above 1785 mm",
+          "rect": [
+            8.333333015441895,
+            9.15999984741211,
+            10.118332862854004,
+            9.253334045410156
+          ]
+        },
+        {
+          "name": "Girls north | solid end",
+          "rect": [
+            10.11833381652832,
+            9.15999984741211,
+            10.803333282470703,
+            9.253334045410156
+          ]
+        },
+        {
+          "name": "Master north | solid 1",
+          "rect": [
+            11.173333168029785,
+            8.486666679382324,
+            11.458333015441895,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Master north | below 1795 mm",
+          "rect": [
+            11.458333015441895,
+            8.486666679382324,
+            13.25333309173584,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Master north | above 1795 mm",
+          "rect": [
+            11.458333015441895,
+            8.486666679382324,
+            13.25333309173584,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Master north | solid end",
+          "rect": [
+            13.25333309173584,
+            8.486666679382324,
+            14.023333549499512,
+            8.58666706085205
+          ]
+        },
+        {
+          "name": "Living west concrete | solid end",
+          "rect": [
+            -0.11999999731779099,
+            3.446666717529297,
+            0.0,
+            8.486666679382324
+          ]
+        },
+        {
+          "name": "Study west upper concrete | solid end",
+          "rect": [
+            5.073333263397217,
+            6.586667060852051,
+            5.353332996368408,
+            9.133333206176758
+          ]
+        },
+        {
+          "name": "Girls east upper concrete | solid end",
+          "rect": [
+            10.806666374206543,
+            6.586667060852051,
+            11.073332786560059,
+            9.133333206176758
+          ]
+        },
+        {
+          "name": "Master east concrete | solid end",
+          "rect": [
+            14.026666641235352,
+            4.266666412353516,
+            14.273332595825195,
+            8.486666679382324
+          ]
+        },
+        {
+          "name": "Master south concrete | solid end",
+          "rect": [
+            11.65333366394043,
+            4.1533331871032715,
+            14.026666641235352,
+            4.266666889190674
+          ]
+        },
+        {
+          "name": "Bathrooms west concrete | solid end",
+          "rect": [
+            8.0,
+            2.4466664791107178,
+            8.366666793823242,
+            4.266666412353516
+          ]
+        },
+        {
+          "name": "Bathrooms east concrete | solid end",
+          "rect": [
+            12.493332862854004,
+            2.446666717529297,
+            12.613333702087402,
+            4.1533331871032715
+          ]
+        },
+        {
+          "name": "Maid north concrete | solid end",
+          "rect": [
+            0.0,
+            3.2799999713897705,
+            1.5333333015441895,
+            3.4466664791107178
+          ]
+        },
+        {
+          "name": "Maid west concrete | solid end",
+          "rect": [
+            -0.12000000476837158,
+            0.9950000047683716,
+            0.1066666692495346,
+            3.320000171661377
+          ]
+        },
+        {
+          "name": "Maid east concrete | solid 1",
+          "rect": [
+            1.346666693687439,
+            2.684999942779541,
+            1.533333420753479,
+            3.2800002098083496
+          ]
+        },
+        {
+          "name": "Maid east concrete | above maid hinged door \u2014 inferred",
+          "rect": [
+            1.346666693687439,
+            1.9749999046325684,
+            1.533333420753479,
+            2.684999942779541
+          ]
+        },
+        {
+          "name": "Maid east concrete | solid end",
+          "rect": [
+            1.346666693687439,
+            0.9950000047683716,
+            1.533333420753479,
+            1.975000023841858
+          ]
+        },
+        {
+          "name": "Maid south concrete | solid end",
+          "rect": [
+            0.0,
+            0.8333333730697632,
+            1.5333333015441895,
+            0.9950000047683716
+          ]
+        },
+        {
+          "name": "Entrance west nib concrete | solid end",
+          "rect": [
+            1.5333333015441895,
+            0.9333333969116211,
+            1.7200000286102295,
+            1.7000000476837158
+          ]
+        },
+        {
+          "name": "Entrance south concrete | solid 1",
+          "rect": [
+            1.5333333015441895,
+            0.8333333134651184,
+            1.7599999904632568,
+            0.9333333373069763
+          ]
+        },
+        {
+          "name": "Entrance south concrete | above main entrance 1040 mm",
+          "rect": [
+            1.7599999904632568,
+            0.8333333134651184,
+            2.799999952316284,
+            0.9333333373069763
+          ]
+        },
+        {
+          "name": "Entrance south concrete | solid end",
+          "rect": [
+            2.799999952316284,
+            0.8333333134651184,
+            3.240000009536743,
+            0.9333333373069763
+          ]
+        },
+        {
+          "name": "Kitchen west lower concrete | solid end",
+          "rect": [
+            3.240000009536743,
+            0.0,
+            3.5266668796539307,
+            1.59333336353302
+          ]
+        },
+        {
+          "name": "Kitchen south concrete | solid end",
+          "rect": [
+            3.5266666412353516,
+            -0.11999999731779099,
+            8.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Service yard east concrete | below three-panel sliding window a",
+          "rect": [
+            9.426666259765625,
+            0.0,
+            9.546667098999023,
+            2.2666666507720947
+          ]
+        },
+        {
+          "name": "Service yard east concrete | above three-panel sliding window a",
+          "rect": [
+            9.426666259765625,
+            0.0,
+            9.546667098999023,
+            2.2666666507720947
+          ]
+        },
+        {
+          "name": "Study / girls central concrete nib | solid end",
+          "rect": [
+            7.90000057220459,
+            5.373332977294922,
+            8.255000114440918,
+            5.513333320617676
+          ]
+        },
+        {
+          "name": "Study west lower internal | solid end",
+          "rect": [
+            5.073333740234375,
+            5.549999713897705,
+            5.183333396911621,
+            6.586666584014893
+          ]
+        },
+        {
+          "name": "Study south internal | solid end",
+          "rect": [
+            5.073333740234375,
+            5.449999809265137,
+            6.946666717529297,
+            5.550000190734863
+          ]
+        },
+        {
+          "name": "Study / girls dividing internal | solid end",
+          "rect": [
+            8.023332595825195,
+            5.513333320617676,
+            8.133333206176758,
+            9.15999984741211
+          ]
+        },
+        {
+          "name": "Girls south internal | solid end",
+          "rect": [
+            9.206665992736816,
+            5.449999809265137,
+            11.173333168029785,
+            5.550000190734863
+          ]
+        },
+        {
+          "name": "Girls / master upper internal lining | solid end",
+          "rect": [
+            11.073332786560059,
+            6.586667060852051,
+            11.173333168029785,
+            8.486666679382324
+          ]
+        },
+        {
+          "name": "Girls / master lower internal | solid end",
+          "rect": [
+            11.073332786560059,
+            5.549999713897705,
+            11.173333168029785,
+            6.586666584014893
+          ]
+        },
+        {
+          "name": "Master entry door header | above master entry door centred on 1",
+          "rect": [
+            9.645833015441895,
+            4.266666412353516,
+            9.745833396911621,
+            5.449999809265137
+          ]
+        },
+        {
+          "name": "Study access header | above study door",
+          "rect": [
+            6.946666717529297,
+            5.449999809265137,
+            7.899999618530273,
+            5.550000190734863
+          ]
+        },
+        {
+          "name": "Girls access header | above girls door",
+          "rect": [
+            8.255000114440918,
+            5.449999809265137,
+            9.206665992736816,
+            5.550000190734863
+          ]
+        },
+        {
+          "name": "Bathroom 1 north internal | above bathroom 1 door",
+          "rect": [
+            8.366666793823242,
+            4.1533331871032715,
+            9.386667251586914,
+            4.266666889190674
+          ]
+        },
+        {
+          "name": "Bathroom 1 north internal | solid end",
+          "rect": [
+            9.386666297912598,
+            4.1533331871032715,
+            10.166666984558105,
+            4.266666889190674
+          ]
+        },
+        {
+          "name": "Bathroom 2 north internal | solid 1",
+          "rect": [
+            10.273333549499512,
+            4.1533331871032715,
+            10.800000190734863,
+            4.266666889190674
+          ]
+        },
+        {
+          "name": "Bathroom 2 north internal | above bathroom 2 door",
+          "rect": [
+            10.800000190734863,
+            4.1533331871032715,
+            11.653332710266113,
+            4.266666889190674
+          ]
+        },
+        {
+          "name": "Bathroom 2 north internal | solid end",
+          "rect": [
+            11.65333366394043,
+            4.1533331871032715,
+            12.49333381652832,
+            4.266666889190674
+          ]
+        },
+        {
+          "name": "Bathroom dividing internal | solid end",
+          "rect": [
+            10.166666984558105,
+            2.3399999141693115,
+            10.273333549499512,
+            4.1533331871032715
+          ]
+        },
+        {
+          "name": "Bathroom 1 south internal | solid 1",
+          "rect": [
+            8.366665840148926,
+            2.3400001525878906,
+            9.566666603088379,
+            2.446666717529297
+          ]
+        },
+        {
+          "name": "Bathroom 1 south internal | below bathroom 1 window 600 mm",
+          "rect": [
+            9.566666603088379,
+            2.3400001525878906,
+            10.166666984558105,
+            2.446666717529297
+          ]
+        },
+        {
+          "name": "Bathroom 1 south internal | above bathroom 1 window 600 mm",
+          "rect": [
+            9.566666603088379,
+            2.3400001525878906,
+            10.166666984558105,
+            2.446666717529297
+          ]
+        },
+        {
+          "name": "Bathroom 2 south internal | solid 1",
+          "rect": [
+            10.273333549499512,
+            2.3400001525878906,
+            10.833333015441895,
+            2.446666717529297
+          ]
+        },
+        {
+          "name": "Bathroom 2 south internal | below bathroom 2 window \u2014 inferre",
+          "rect": [
+            10.833333969116211,
+            2.3400001525878906,
+            11.643333435058594,
+            2.446666717529297
+          ]
+        },
+        {
+          "name": "Bathroom 2 south internal | above bathroom 2 window \u2014 inferre",
+          "rect": [
+            10.833333969116211,
+            2.3400001525878906,
+            11.643333435058594,
+            2.446666717529297
+          ]
+        },
+        {
+          "name": "Bathroom 2 south internal | solid end",
+          "rect": [
+            11.643333435058594,
+            2.3400001525878906,
+            12.49333381652832,
+            2.446666717529297
+          ]
+        },
+        {
+          "name": "Kitchen north 930 mm return | solid end",
+          "rect": [
+            3.240000009536743,
+            1.596666693687439,
+            3.373333215713501,
+            2.5266666412353516
+          ]
+        },
+        {
+          "name": "Kitchen north 2388 mm FIXED WALL | solid end",
+          "rect": [
+            5.613333702087402,
+            2.4533333778381348,
+            7.999899864196777,
+            2.5266666412353516
+          ]
+        },
+        {
+          "name": "Kitchen sliding-door header | above three-panel sliding door ",
+          "rect": [
+            3.4000000953674316,
+            2.4533333778381348,
+            5.613333225250244,
+            2.5266666412353516
+          ]
+        },
+        {
+          "name": "Service yard north internal | solid end",
+          "rect": [
+            8.119999885559082,
+            2.2666666507720947,
+            9.426667213439941,
+            2.3333332538604736
+          ]
+        },
+        {
+          "name": "Kitchen / service yard north return | solid end",
+          "rect": [
+            8.0,
+            1.6366666555404663,
+            8.120000839233398,
+            2.3333332538604736
+          ]
+        },
+        {
+          "name": "Kitchen / service yard south return | solid end",
+          "rect": [
+            8.0,
+            0.0,
+            8.120000839233398,
+            0.6666666865348816
+          ]
+        },
+        {
+          "name": "Service yard south internal | solid end",
+          "rect": [
+            8.119999885559082,
+            -0.11999999731779099,
+            9.426667213439941,
+            0.0
+          ]
+        }
+      ],
+      "rooms": {
+        "living": [
+          0,
+          3.446667,
+          5.073333,
+          8.486667
+        ],
+        "study": [
+          5.353333,
+          5.55,
+          8.023333,
+          9.16
+        ],
+        "girls": [
+          8.133333,
+          5.55,
+          11.073333,
+          9.16
+        ]
+      },
+      "play_rect": [
+        2.05,
+        6.15,
+        4.2,
+        7.85
+      ],
+      "study_allowed_segment": [
+        6.68,
+        8.88
+      ],
+      "checks": {
+        "girls_night_side_gap_mm": 270,
+        "girls_day_cupboard_to_bed_gap_mm": 1220,
+        "girls_wardrobe_to_bed_foot_mm": 910,
+        "study_cupboard_plus_stack_allowances_mm": 2100,
+        "study_spacing_allowance_mm": 100
+      },
+      "storage": {
+        "existing_cupboards": 3,
+        "samla_contents_boxes": 21,
+        "toy_nominal_l": 450,
+        "study_box_nominal_l": 495,
+        "new_living_toy_inner_envelope_l": 621,
+        "new_living_archive_inner_envelope_l": 588,
+        "status": "Content allocation retained; actual shelf/contents capacity unresolved. Metal cupboard doors not fully usable with trundle open."
+      }
+    }
+  },
+  "assumptions": [
+    "Both Packout stacks reserve 600 W x 450 D x 2000 H mm including planning allowance; not enclosed.",
+    "Packout composition per owner: two 4-drawer 48-22-8444, one multi-depth 3-drawer 48-22-8447, two cabinets 48-22-8445.",
+    "Module proportions are illustrative within the owner-confirmed 2000 mm overall height; do not infer actual interlock/base dimensions.",
+    "Fixed wardrobe south wall: 600 mm depth and sliding doors confirmed. Full nominal 1867 mm wall reserved; visible cabinet and switch gap approximated.",
+    "Girls 2200 mm west-wall segment interpreted as y=6.68..8.88 m; exact endpoints remain to confirm.",
+    "Night mode accesses mattresses from the foot; 270 mm beside lower mattress is not a walking route. Metal cupboard doors need trundle closed for full use.",
+    "Bed and recliner remain dimensioned proxies. Fixed finish colours and render lights are illustrative."
+  ]
+}

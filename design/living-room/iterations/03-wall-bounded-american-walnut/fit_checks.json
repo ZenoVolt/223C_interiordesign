@@ -1,0 +1,224 @@
+{
+  "scope": "Proxy footprint, modelled door sweep and baseline checks; not a site/product/structural or complete storage-capacity approval.",
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "Architectural baseline byte-for-byte unchanged",
+      "pass": true,
+      "detail": "19384b90381eda3059a4c44cf9e691bbb4d801723dbfc2ab9452b82d4ef81a72"
+    },
+    {
+      "name": "A-with-tv living cupboards remain within backing wall",
+      "pass": true,
+      "detail": {
+        "wall_y": [
+          5.55,
+          8.486667
+        ],
+        "cupboard_y": [
+          [
+            6.44,
+            8.440000000000001
+          ],
+          [
+            5.59,
+            6.390000000000001
+          ]
+        ]
+      }
+    },
+    {
+      "name": "A-with-tv study storage within authorised 2200 mm",
+      "pass": true,
+      "detail": {
+        "start_y": 6.68,
+        "end_y": 8.88,
+        "length_mm": 2200.000000000001
+      }
+    },
+    {
+      "name": "A-with-tv three existing cupboards retained",
+      "pass": true,
+      "detail": "Two girls, one study"
+    },
+    {
+      "name": "A-with-tv two Packout stack envelopes retained",
+      "pass": true,
+      "detail": "Two freestanding 2000 mm stacks"
+    },
+    {
+      "name": "A-with-tv 21 box contents included",
+      "pass": true,
+      "detail": "10 toy-box + 11 study-box contents; repacking allowed"
+    },
+    {
+      "name": "A-with-tv fixed sliding wardrobe reserved",
+      "pass": true,
+      "detail": "Full south-wall envelope reserved; 600 mm depth owner-confirmed"
+    },
+    {
+      "name": "A-with-tv 910 mm bed-foot band free in night mode",
+      "pass": true,
+      "detail": "This is the access band; 270 mm beside lower mattress is not a walking route"
+    },
+    {
+      "name": "A-with-tv PACKOUT stack 1 / 2000 H drawer allowance clear",
+      "pass": true,
+      "detail": "450 mm forward planning allowance; actual full drawer stroke to verify"
+    },
+    {
+      "name": "A-with-tv PACKOUT stack 2 / 2000 H drawer allowance clear",
+      "pass": true,
+      "detail": "450 mm forward planning allowance; actual full drawer stroke to verify"
+    },
+    {
+      "name": "A-with-tv marked play area clear of furniture",
+      "pass": true,
+      "detail": {
+        "play_area_m2": 3.91
+      }
+    },
+    {
+      "name": "A-with-tv no unintended furniture footprint overlap",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "A-with-tv girls full modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "A-with-tv study full modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "A-with-tv living furniture clears wall footprints",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "A-with-tv girls furniture clears wall footprints",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "A-with-tv study furniture clears wall footprints",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "B-without-tv living cupboards remain within backing wall",
+      "pass": true,
+      "detail": {
+        "wall_y": [
+          5.55,
+          8.486667
+        ],
+        "cupboard_y": [
+          [
+            6.44,
+            8.440000000000001
+          ],
+          [
+            5.59,
+            6.390000000000001
+          ]
+        ]
+      }
+    },
+    {
+      "name": "B-without-tv study storage within authorised 2200 mm",
+      "pass": true,
+      "detail": {
+        "start_y": 6.68,
+        "end_y": 8.88,
+        "length_mm": 2200.000000000001
+      }
+    },
+    {
+      "name": "B-without-tv three existing cupboards retained",
+      "pass": true,
+      "detail": "Two girls, one study"
+    },
+    {
+      "name": "B-without-tv two Packout stack envelopes retained",
+      "pass": true,
+      "detail": "Two freestanding 2000 mm stacks"
+    },
+    {
+      "name": "B-without-tv 21 box contents included",
+      "pass": true,
+      "detail": "10 toy-box + 11 study-box contents; repacking allowed"
+    },
+    {
+      "name": "B-without-tv fixed sliding wardrobe reserved",
+      "pass": true,
+      "detail": "Full south-wall envelope reserved; 600 mm depth owner-confirmed"
+    },
+    {
+      "name": "B-without-tv 910 mm bed-foot band free in night mode",
+      "pass": true,
+      "detail": "This is the access band; 270 mm beside lower mattress is not a walking route"
+    },
+    {
+      "name": "B-without-tv PACKOUT stack 1 / 2000 H drawer allowance clear",
+      "pass": true,
+      "detail": "450 mm forward planning allowance; actual full drawer stroke to verify"
+    },
+    {
+      "name": "B-without-tv PACKOUT stack 2 / 2000 H drawer allowance clear",
+      "pass": true,
+      "detail": "450 mm forward planning allowance; actual full drawer stroke to verify"
+    },
+    {
+      "name": "B-without-tv marked play area clear of furniture",
+      "pass": true,
+      "detail": {
+        "play_area_m2": 3.655
+      }
+    },
+    {
+      "name": "B-without-tv no unintended furniture footprint overlap",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "B-without-tv girls full modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "B-without-tv study full modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "B-without-tv living furniture clears wall footprints",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "B-without-tv girls furniture clears wall footprints",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "B-without-tv study furniture clears wall footprints",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "unresolved": [
+    "Exact study and girls west-wall segment endpoints",
+    "Bed/recliner product dimensions",
+    "Acceptance of metal-cupboard access restricted with bed open",
+    "Actual usable cupboard capacity and content fit",
+    "Final Packout drawer stroke / installed accessories",
+    "Built-in wardrobe width, switch gap, height and finish",
+    "Installed lighting / finish appearance"
+  ],
+  "overall_feasibility": "Conditional: metal cupboard doors require bed stored for full access; foot-access night arrangement awaits owner acceptance. Storage capacity/product/site checks remain unresolved.",
+  "full_cupboard_access_all_bed_states": false
+}

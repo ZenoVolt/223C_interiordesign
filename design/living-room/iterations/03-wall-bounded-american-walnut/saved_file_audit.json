@@ -1,0 +1,71 @@
+{
+  "all_pass": true,
+  "checks": [
+    {
+      "variant": "A-with-tv",
+      "architecture_geometry_unchanged": true,
+      "architecture_meshes": 246,
+      "differences": [],
+      "saved_study_wall_run_mm": 2182.5,
+      "study_within_2200": true,
+      "packout_render_heights_mm": [
+        2000,
+        2000
+      ],
+      "packout_full_height": true,
+      "packout_modules_per_stack": [
+        5,
+        5
+      ],
+      "packout_drawer_faces_per_stack": [
+        11,
+        11
+      ],
+      "packout_cabinet_fronts_per_stack": [
+        2,
+        2
+      ],
+      "packout_composition_checked": true,
+      "fixed_wardrobe_retained": true,
+      "actual_living_cupboard_y_bounds": [
+        5.589999675750732,
+        8.440000534057617
+      ],
+      "living_cupboards_within_wall": true,
+      "new_cupboard_fronts_american_walnut": true
+    },
+    {
+      "variant": "B-without-tv",
+      "architecture_geometry_unchanged": true,
+      "architecture_meshes": 246,
+      "differences": [],
+      "saved_study_wall_run_mm": 2182.5,
+      "study_within_2200": true,
+      "packout_render_heights_mm": [
+        2000,
+        2000
+      ],
+      "packout_full_height": true,
+      "packout_modules_per_stack": [
+        5,
+        5
+      ],
+      "packout_drawer_faces_per_stack": [
+        11,
+        11
+      ],
+      "packout_cabinet_fronts_per_stack": [
+        2,
+        2
+      ],
+      "packout_composition_checked": true,
+      "fixed_wardrobe_retained": true,
+      "actual_living_cupboard_y_bounds": [
+        5.589999675750732,
+        8.440000534057617
+      ],
+      "living_cupboards_within_wall": true,
+      "new_cupboard_fronts_american_walnut": true
+    }
+  ]
+}

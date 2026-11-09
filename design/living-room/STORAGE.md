@@ -1,6 +1,6 @@
 # Storage allocation for first layout pass
 
-9 November 2026. **Current allocation:** see [revision 02](iterations/02-wardrobe-and-full-height-packout/REVIEW.md). Packout composition is supplied, stacks reserve 600 × 450 × 2000 mm each and remain freestanding. Girls' south-wall built-in has sliding doors and confirmed 600 mm depth. The revised west-wall metal cupboards have full door access only with the pull-out bed stored; night access is at the bed foot.
+9 November 2026. **Current allocation:** see [revision 03](iterations/03-wall-bounded-american-walnut/REVIEW.md). New wooden furniture is American walnut; living cupboards fit within their backing wall. Packout composition is supplied, stacks reserve 600 × 450 × 2000 mm each and remain freestanding. Girls' south-wall built-in has sliding doors and confirmed 600 mm depth. The revised west-wall metal cupboards have full door access only with the pull-out bed stored; night access is at the bed foot.
 
 ## Confirmed inventory
 
@@ -28,7 +28,7 @@ The existing cupboards' combined outer volume is not spare or fully usable stora
 | --- | --- | --- |
 | Girls' bedroom | Revision 02 uses two metal cupboards on the reported west-wall area; fixed wardrobe retained south | About 910 mm at bed foot and 270 mm beside lower mattress; latter not a route. Full metal-door use needs bed stored; owner acceptance pending |
 | Study | 900 mm existing cupboard + two 600 mm stack allowances + 100 mm gaps in 2200 mm permitted run | Full-height stacks freestanding; 450 mm forward drawer allowance. Exact endpoints/accessories/drawer travel to verify |
-| Living | New 2400 × 500 × 800 H toy cupboard plus 800 × 500 × 2100 H study archive cupboard | Ten toy-box contents and eleven study-box contents allocated separately. Proposed usable envelopes 653 / 588 L are not content-fit approvals |
+| Living | New American walnut 2000 × 500 × 900 H toy cupboard plus 800 × 500 × 2100 H study archive cupboard, with 50 mm gap | Total 2850 mm run stays within backing wall. Ten toy-box contents and eleven study-box contents allocated separately. Proposed usable envelopes 621 / 588 L are not content-fit approvals |
 | Study / girls' bedroom supplementary storage | Add loose cupboards where needed for remaining retained contents | Find an actual footprint and usable capacity. Do not count an unspecified cupboard as a solved destination |
 
 This is an allocation hypothesis, not a requirement that all ten toy-box contents move into the living room. Keep daily-use versus reserve storage adjustable during the first design review. The eleven study boxes are not assumed to contain toys.
