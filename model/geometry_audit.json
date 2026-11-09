@@ -1,0 +1,245 @@
+{
+  "file": "C:\\Users\\keith\\Desktop\\223C Interior Design\\model\\223C_Existing_Shell_v02.blend",
+  "method": "Independent BVH raycasts of evaluated wall geometry in the saved file; excludes door leaves, windows, labels and hidden cutters.",
+  "tolerance_mm": 5,
+  "all_pass": true,
+  "measurements": [
+    {
+      "measurement": "Living width",
+      "actual_mm": 5073.334,
+      "plan_mm": 5070,
+      "error_mm": 3.334,
+      "pass": true,
+      "hit_walls": [
+        "Study west lower internal | solid end",
+        "Living west concrete | solid end"
+      ]
+    },
+    {
+      "measurement": "Living depth above maid room",
+      "actual_mm": 5040.0,
+      "plan_mm": 5040,
+      "error_mm": 0.0,
+      "pass": true,
+      "hit_walls": [
+        "Living north | below 2320 mm",
+        "Maid north concrete | solid end"
+      ]
+    },
+    {
+      "measurement": "Study upper width",
+      "actual_mm": 2670.0,
+      "plan_mm": 2670,
+      "error_mm": -0.0,
+      "pass": true,
+      "hit_walls": [
+        "Study / girls dividing internal | solid end",
+        "Study west upper concrete | solid end"
+      ]
+    },
+    {
+      "measurement": "Study depth",
+      "actual_mm": 3610.0,
+      "plan_mm": 3610,
+      "error_mm": 0.0,
+      "pass": true,
+      "hit_walls": [
+        "Study north | below 1780 mm",
+        "Study south internal | solid end"
+      ]
+    },
+    {
+      "measurement": "Girls upper width",
+      "actual_mm": 2673.333,
+      "plan_mm": 2670,
+      "error_mm": 3.333,
+      "pass": true,
+      "hit_walls": [
+        "Girls east upper concrete | solid end",
+        "Study / girls dividing internal | solid end"
+      ]
+    },
+    {
+      "measurement": "Girls depth",
+      "actual_mm": 3610.0,
+      "plan_mm": 3610,
+      "error_mm": 0.0,
+      "pass": true,
+      "hit_walls": [
+        "Girls north | below 1785 mm",
+        "Girls south internal | solid end"
+      ]
+    },
+    {
+      "measurement": "Master upper width",
+      "actual_mm": 2853.333,
+      "plan_mm": 2850,
+      "error_mm": 3.333,
+      "pass": true,
+      "hit_walls": [
+        "Master east concrete | solid end",
+        "Girls / master upper internal lining | solid end"
+      ]
+    },
+    {
+      "measurement": "Master depth",
+      "actual_mm": 4220.0,
+      "plan_mm": 4220,
+      "error_mm": 0.0,
+      "pass": true,
+      "hit_walls": [
+        "Master north | below 1795 mm",
+        "Master south concrete | solid end"
+      ]
+    },
+    {
+      "measurement": "Maid width",
+      "actual_mm": 1240.0,
+      "plan_mm": 1240,
+      "error_mm": 0.0,
+      "pass": true,
+      "hit_walls": [
+        "Maid east concrete | solid end",
+        "Maid west concrete | solid end"
+      ]
+    },
+    {
+      "measurement": "Maid depth",
+      "actual_mm": 2285.0,
+      "plan_mm": 2285,
+      "error_mm": -0.0,
+      "pass": true,
+      "hit_walls": [
+        "Maid north concrete | solid end",
+        "Maid south concrete | solid end"
+      ]
+    },
+    {
+      "measurement": "Kitchen south width",
+      "actual_mm": 4473.333,
+      "plan_mm": 4470,
+      "error_mm": 3.333,
+      "pass": true,
+      "hit_walls": [
+        "Kitchen / service yard south return | solid end",
+        "Kitchen west lower concrete | solid end"
+      ]
+    },
+    {
+      "measurement": "Bathroom 1 width",
+      "actual_mm": 1800.0,
+      "plan_mm": 1800,
+      "error_mm": 0.0,
+      "pass": true,
+      "hit_walls": [
+        "Bathroom dividing internal | solid end",
+        "Bathrooms west concrete | solid end"
+      ]
+    },
+    {
+      "measurement": "Bathroom 2 width",
+      "actual_mm": 2220.0,
+      "plan_mm": 2215,
+      "error_mm": 5.0,
+      "pass": true,
+      "hit_walls": [
+        "Bathrooms east concrete | solid end",
+        "Bathroom dividing internal | solid end"
+      ]
+    },
+    {
+      "measurement": "Bathroom 1 depth",
+      "actual_mm": 1706.666,
+      "plan_mm": 1710,
+      "error_mm": -3.334,
+      "pass": true,
+      "hit_walls": [
+        "Bathroom 1 north internal | solid end",
+        "Bathroom 1 south internal | below bathroom 1 window 600 mm"
+      ]
+    },
+    {
+      "measurement": "Bathroom 2 depth",
+      "actual_mm": 1706.666,
+      "plan_mm": 1710,
+      "error_mm": -3.334,
+      "pass": true,
+      "hit_walls": [
+        "Master south concrete | solid end",
+        "Bathroom 2 south internal | solid end"
+      ]
+    }
+  ],
+  "owner_correction_checks": [
+    {
+      "check": "Service east opening at source Y 1130",
+      "pass": true,
+      "detail": "Wall at 990 mm; clear opening at 1010 mm; wall above 2200 mm head."
+    },
+    {
+      "check": "Service east opening at source Y 1280",
+      "pass": true,
+      "detail": "Wall at 990 mm; clear opening at 1010 mm; wall above 2200 mm head."
+    },
+    {
+      "check": "Service east opening at source Y 1430",
+      "pass": true,
+      "detail": "Wall at 990 mm; clear opening at 1010 mm; wall above 2200 mm head."
+    },
+    {
+      "check": "Service south wall is solid",
+      "pass": true,
+      "detail": "Service yard south internal | solid end"
+    },
+    {
+      "check": "Service window contains three sliding panes",
+      "pass": true,
+      "detail": 3
+    },
+    {
+      "check": "Maid door swings outward east of its wall",
+      "pass": true,
+      "detail": [
+        1.7947838306427002,
+        2.6726105213165283,
+        1.0540000200271606
+      ]
+    },
+    {
+      "check": "Study hinge at unchanged doorway east jamb",
+      "pass": true,
+      "detail": [
+        7.900000095367432,
+        5.5,
+        0.0
+      ]
+    },
+    {
+      "check": "Girls hinge at unchanged doorway west jamb",
+      "pass": true,
+      "detail": [
+        8.255000114440918,
+        5.5,
+        0.0
+      ]
+    },
+    {
+      "check": "Master upper hinge centred on 145 mm segment",
+      "pass": true,
+      "detail": {
+        "source_x_px": 1530.3749809265137,
+        "source_y_px": 632.5000286102295
+      }
+    },
+    {
+      "check": "Old master west doorway removed",
+      "pass": true,
+      "detail": "No previously inferred west-wall doorway retained."
+    }
+  ],
+  "scene_units": "METRIC",
+  "ceiling_datum_mm": 2580,
+  "loose_furniture_collection_empty": true,
+  "packed_reference_count": 2,
+  "camera_count": 6
+}

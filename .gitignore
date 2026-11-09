@@ -1,0 +1,10 @@
+# Blender's automatic save copies; named design versions are tracked.
+*.blend[0-9]*
+*.blend@*
+
+# Reproducible runtime diagnostics and Python caches.
+*.log
+__pycache__/
+*.py[cod]
+Thumbs.db
+.DS_Store

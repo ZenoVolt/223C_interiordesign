@@ -1,0 +1,510 @@
+{
+  "project": "223C existing home — architectural shell v02",
+  "units": "metres",
+  "checks": [
+    {
+      "name": "Ceiling datum",
+      "pass": true,
+      "detail": 2.58
+    },
+    {
+      "name": "Wall geometry respects ceiling datum",
+      "pass": true,
+      "detail": "Walls reach wet-area subfloor and stop at unfinished ceiling. Main floor hides the wall bases."
+    },
+    {
+      "name": "Every wall run reaches ceiling datum",
+      "pass": true,
+      "detail": 42
+    },
+    {
+      "name": "Bathroom drop present",
+      "pass": true,
+      "detail": 0.06
+    },
+    {
+      "name": "Kitchen fixed wall length",
+      "pass": true,
+      "detail": "2388 mm wall is on the right of slider"
+    },
+    {
+      "name": "Kitchen slider on correct side",
+      "pass": true,
+      "detail": "Three-panel assembly x=586..918 source pixels, wall x=918..1276.2"
+    },
+    {
+      "name": "Window elevations clear north beams",
+      "pass": true,
+      "detail": {
+        "window_head": 2.2,
+        "lowest_north_beam_underside": 2.2350000000000003
+      }
+    },
+    {
+      "name": "Doors clear deepest beam",
+      "pass": true,
+      "detail": 2100
+    },
+    {
+      "name": "False ceiling dimensions",
+      "pass": true,
+      "detail": "1405 x 1095 x 150 mm"
+    },
+    {
+      "name": "Window count",
+      "pass": true,
+      "detail": "5 north windows + 2 bathroom windows + 1 service-yard window"
+    },
+    {
+      "name": "Packed references",
+      "pass": true,
+      "detail": "Both source plans packed in the .blend"
+    },
+    {
+      "name": "Primary measured dimensions within 5 mm raster tolerance",
+      "pass": true,
+      "detail": {
+        "Living north clear width": {
+          "model_mm": 5073.33,
+          "plan_mm": 5070,
+          "difference_mm": 3.33
+        },
+        "Living west clear depth": {
+          "model_mm": 5040.0,
+          "plan_mm": 5040,
+          "difference_mm": 0.0
+        },
+        "Study upper clear width": {
+          "model_mm": 2670.0,
+          "plan_mm": 2670,
+          "difference_mm": 0.0
+        },
+        "Study clear depth": {
+          "model_mm": 3610.0,
+          "plan_mm": 3610,
+          "difference_mm": 0.0
+        },
+        "Girls upper clear width": {
+          "model_mm": 2670.0,
+          "plan_mm": 2670,
+          "difference_mm": 0.0
+        },
+        "Girls clear depth": {
+          "model_mm": 3610.0,
+          "plan_mm": 3610,
+          "difference_mm": 0.0
+        },
+        "Master clear width": {
+          "model_mm": 2853.33,
+          "plan_mm": 2850,
+          "difference_mm": 3.33
+        },
+        "Master clear depth": {
+          "model_mm": 4220.0,
+          "plan_mm": 4220,
+          "difference_mm": 0.0
+        },
+        "Maid clear width": {
+          "model_mm": 1240.0,
+          "plan_mm": 1240,
+          "difference_mm": 0.0
+        },
+        "Maid clear depth": {
+          "model_mm": 2285.0,
+          "plan_mm": 2285,
+          "difference_mm": 0.0
+        },
+        "Kitchen south span": {
+          "model_mm": 4473.33,
+          "plan_mm": 4470,
+          "difference_mm": 3.33
+        },
+        "Bathroom 1 clear width": {
+          "model_mm": 1800.0,
+          "plan_mm": 1800,
+          "difference_mm": 0.0
+        },
+        "Bathroom 2 clear width": {
+          "model_mm": 2220.0,
+          "plan_mm": 2215,
+          "difference_mm": 5.0
+        },
+        "Bathrooms clear depth": {
+          "model_mm": 1706.67,
+          "plan_mm": 1710,
+          "difference_mm": -3.33
+        }
+      }
+    },
+    {
+      "name": "Junction top surfaces have outward normals",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "openings": [
+    {
+      "wall": "Living north",
+      "label": "2320 mm",
+      "width_mm": 2320.0,
+      "sill_mm": 600.0,
+      "head_mm": 2200.0
+    },
+    {
+      "wall": "Living north",
+      "label": "1200 mm",
+      "width_mm": 1200.0,
+      "sill_mm": 600.0,
+      "head_mm": 2200.0
+    },
+    {
+      "wall": "Study north",
+      "label": "1780 mm",
+      "width_mm": 1780.0,
+      "sill_mm": 600.0,
+      "head_mm": 2200.0
+    },
+    {
+      "wall": "Girls north",
+      "label": "1785 mm",
+      "width_mm": 1785.0,
+      "sill_mm": 600.0,
+      "head_mm": 2200.0
+    },
+    {
+      "wall": "Master north",
+      "label": "1795 mm",
+      "width_mm": 1795.0,
+      "sill_mm": 600.0,
+      "head_mm": 2200.0
+    },
+    {
+      "wall": "Maid east concrete",
+      "label": "maid hinged door — inferred",
+      "width_mm": 710.0,
+      "sill_mm": 0,
+      "head_mm": 2100.0
+    },
+    {
+      "wall": "Entrance south concrete",
+      "label": "main entrance 1040 mm",
+      "width_mm": 1040.0,
+      "sill_mm": 0,
+      "head_mm": 2100.0
+    },
+    {
+      "wall": "Service yard east concrete",
+      "label": "three-panel sliding window above 1000 mm wall — confirmed",
+      "width_mm": 2266.7,
+      "sill_mm": 1000.0,
+      "head_mm": 2200.0
+    },
+    {
+      "wall": "Master entry door header",
+      "label": "master entry door centred on 145 mm segment — confirmed",
+      "width_mm": 1183.3,
+      "sill_mm": 0,
+      "head_mm": 2100.0
+    },
+    {
+      "wall": "Study access header",
+      "label": "study door",
+      "width_mm": 953.3,
+      "sill_mm": 0,
+      "head_mm": 2100.0
+    },
+    {
+      "wall": "Girls access header",
+      "label": "girls door",
+      "width_mm": 951.7,
+      "sill_mm": 0,
+      "head_mm": 2100.0
+    },
+    {
+      "wall": "Bathroom 1 north internal",
+      "label": "bathroom 1 door",
+      "width_mm": 1020.0,
+      "sill_mm": 0,
+      "head_mm": 2100.0
+    },
+    {
+      "wall": "Bathroom 2 north internal",
+      "label": "bathroom 2 door",
+      "width_mm": 853.3,
+      "sill_mm": 0,
+      "head_mm": 2100.0
+    },
+    {
+      "wall": "Bathroom 1 south internal",
+      "label": "bathroom 1 window 600 mm",
+      "width_mm": 600.0,
+      "sill_mm": 1450.0,
+      "head_mm": 2100.0
+    },
+    {
+      "wall": "Bathroom 2 south internal",
+      "label": "bathroom 2 window — inferred 810 mm",
+      "width_mm": 810.0,
+      "sill_mm": 1450.0,
+      "head_mm": 2100.0
+    },
+    {
+      "wall": "Kitchen sliding-door header",
+      "label": "three-panel sliding door — confirmed",
+      "width_mm": 2213.3,
+      "sill_mm": 0,
+      "head_mm": 2100.0
+    }
+  ],
+  "beams": [
+    {
+      "name": "B01 | Living north window beam",
+      "width_mm": 160,
+      "drop_mm": 325,
+      "underside_mm": 2255,
+      "status": "drop assumed; 160 mm width labelled"
+    },
+    {
+      "name": "B02 | Study north window beam",
+      "width_mm": 160,
+      "drop_mm": 325,
+      "underside_mm": 2255,
+      "status": "measured label"
+    },
+    {
+      "name": "B03 | Girls north window beam",
+      "width_mm": 160,
+      "drop_mm": 325,
+      "underside_mm": 2255,
+      "status": "height inferred from adjacent labelled beam"
+    },
+    {
+      "name": "B04 | Master north window beam",
+      "width_mm": 160,
+      "drop_mm": 345,
+      "underside_mm": 2235,
+      "status": "measured label"
+    },
+    {
+      "name": "B05 | Study south beam",
+      "width_mm": 165,
+      "drop_mm": 325,
+      "underside_mm": 2255,
+      "status": "measured label"
+    },
+    {
+      "name": "B06 | Study west small return",
+      "width_mm": 65,
+      "drop_mm": 325,
+      "underside_mm": 2255,
+      "status": "measured label"
+    },
+    {
+      "name": "B07 | Girls south beam",
+      "width_mm": 165,
+      "drop_mm": 325,
+      "underside_mm": 2255,
+      "status": "165 width labelled; drop inferred"
+    },
+    {
+      "name": "B08 | Girls east return",
+      "width_mm": 175,
+      "drop_mm": 325,
+      "underside_mm": 2255,
+      "status": "width/drop inferred from sketch and wall return"
+    },
+    {
+      "name": "B09 | Living / dining spine",
+      "width_mm": 285,
+      "drop_mm": 345,
+      "underside_mm": 2235,
+      "status": "285 width labelled; drop inferred at kitchen junction"
+    },
+    {
+      "name": "B10a | Kitchen cross beam north half",
+      "width_mm": 280,
+      "drop_mm": 345,
+      "underside_mm": 2235,
+      "status": "345 north / 355 south as annotated"
+    },
+    {
+      "name": "B10b | Kitchen cross beam south half",
+      "width_mm": 280,
+      "drop_mm": 355,
+      "underside_mm": 2225,
+      "status": "345 north / 355 south as annotated"
+    },
+    {
+      "name": "B11 | Kitchen west return",
+      "width_mm": 280,
+      "drop_mm": 355,
+      "underside_mm": 2225,
+      "status": "drop/width inferred from cross beam"
+    },
+    {
+      "name": "B12 | Kitchen / wet-area spine",
+      "width_mm": 450,
+      "drop_mm": 425,
+      "underside_mm": 2155,
+      "status": "measured label"
+    },
+    {
+      "name": "B13 | Bathroom 1 north beam",
+      "width_mm": 175,
+      "drop_mm": 245,
+      "underside_mm": 2335,
+      "status": "measured label"
+    },
+    {
+      "name": "B14 | Bathroom 2 north beam",
+      "width_mm": 175,
+      "drop_mm": 245,
+      "underside_mm": 2335,
+      "status": "measured label"
+    },
+    {
+      "name": "B15 | Bathroom divider beam",
+      "width_mm": 355,
+      "drop_mm": 425,
+      "underside_mm": 2155,
+      "status": "measured label"
+    },
+    {
+      "name": "B16 | Bathroom 2 east beam",
+      "width_mm": 355,
+      "drop_mm": 425,
+      "underside_mm": 2155,
+      "status": "355 width labelled; drop inferred from paired divider"
+    }
+  ],
+  "rooms": [
+    {
+      "name": "LIVING",
+      "dimension_reference": "5070 mm north span"
+    },
+    {
+      "name": "STUDY",
+      "dimension_reference": "2670 mm upper clear width"
+    },
+    {
+      "name": "GIRLS BEDROOM",
+      "dimension_reference": "2670 mm upper clear width"
+    },
+    {
+      "name": "MASTER BEDROOM",
+      "dimension_reference": "2850 x 4220 mm"
+    },
+    {
+      "name": "DINING / PASSAGE",
+      "dimension_reference": "open circulation beside bathrooms"
+    },
+    {
+      "name": "MAID ROOM",
+      "dimension_reference": "1240 x 2285 mm"
+    },
+    {
+      "name": "KITCHEN",
+      "dimension_reference": "4470 mm south wall"
+    },
+    {
+      "name": "SERVICE YARD",
+      "dimension_reference": "inferred room identity"
+    },
+    {
+      "name": "BATH 1",
+      "dimension_reference": "1800 x 1710 mm; floor drop assumed 60"
+    },
+    {
+      "name": "BATH 2",
+      "dimension_reference": "2215 x 1710 mm; floor drop assumed 60"
+    }
+  ],
+  "measured_dimension_comparison": {
+    "Living north clear width": {
+      "model_mm": 5073.33,
+      "plan_mm": 5070,
+      "difference_mm": 3.33
+    },
+    "Living west clear depth": {
+      "model_mm": 5040.0,
+      "plan_mm": 5040,
+      "difference_mm": 0.0
+    },
+    "Study upper clear width": {
+      "model_mm": 2670.0,
+      "plan_mm": 2670,
+      "difference_mm": 0.0
+    },
+    "Study clear depth": {
+      "model_mm": 3610.0,
+      "plan_mm": 3610,
+      "difference_mm": 0.0
+    },
+    "Girls upper clear width": {
+      "model_mm": 2670.0,
+      "plan_mm": 2670,
+      "difference_mm": 0.0
+    },
+    "Girls clear depth": {
+      "model_mm": 3610.0,
+      "plan_mm": 3610,
+      "difference_mm": 0.0
+    },
+    "Master clear width": {
+      "model_mm": 2853.33,
+      "plan_mm": 2850,
+      "difference_mm": 3.33
+    },
+    "Master clear depth": {
+      "model_mm": 4220.0,
+      "plan_mm": 4220,
+      "difference_mm": 0.0
+    },
+    "Maid clear width": {
+      "model_mm": 1240.0,
+      "plan_mm": 1240,
+      "difference_mm": 0.0
+    },
+    "Maid clear depth": {
+      "model_mm": 2285.0,
+      "plan_mm": 2285,
+      "difference_mm": 0.0
+    },
+    "Kitchen south span": {
+      "model_mm": 4473.33,
+      "plan_mm": 4470,
+      "difference_mm": 3.33
+    },
+    "Bathroom 1 clear width": {
+      "model_mm": 1800.0,
+      "plan_mm": 1800,
+      "difference_mm": 0.0
+    },
+    "Bathroom 2 clear width": {
+      "model_mm": 2220.0,
+      "plan_mm": 2215,
+      "difference_mm": 5.0
+    },
+    "Bathrooms clear depth": {
+      "model_mm": 1706.67,
+      "plan_mm": 1710,
+      "difference_mm": -3.33
+    }
+  },
+  "object_count": 345,
+  "assumptions": [
+    "Door heads 2100 mm; window sill 600 mm and head 2200 mm. Elevations were not measured.",
+    "Window panel split at 1000 / 1850 mm; top section represented as top-hung, pending confirmation.",
+    "Bathroom window sill/head 1450 / 2100 mm. Service-yard sill is confirmed at 1000 mm; its 2200 mm head remains provisional.",
+    "Bathroom drop 60 mm; AC ledge depth 750 mm, ledge floor -150 mm, parapet 800 mm above ledge floor.",
+    "Door widths and heights remain provisional. Master door uses the inferred full passage width of about 1183 mm. Bathroom hinge sides and maid doorway position remain inferred; confirmed bedroom hinge sides and maid outward swing are retained.",
+    "Maid east-wall door inferred as 710 mm from 2285 - 595 - 980. Opening starts 595 mm from the north inside face.",
+    "Beam labels with explicit heights are modelled as supplied. Unlabelled living/girls north beam drops use 325 mm; girls south/return use 325 mm; kitchen spine uses 345 mm; kitchen west return uses 355 mm.",
+    "Only the explicitly shown 1405 x 1095 x 150 mm false ceiling is modelled. Other false ceilings remain unmeasured.",
+    "Plan linework is traced at 150 px/m. The study/girls 3610 mm depth and maid 2285 mm depth override raster drift. Primary clear dimensions are checked within 5 mm; contradictory minor chains remain approximate.",
+    "Wall/window reveal depths follow raster linework where no thickness is supplied. Finish materials are neutral placeholders.",
+    "The unfinished ceiling is the height datum. A hidden 120 mm slab above it is a viewing aid, not a measured construction depth.",
+    "Fixed sanitary fixtures are simplified location proxies, not selected products. No loose furniture or kitchen cabinetry has been invented."
+  ],
+  "junction_boolean_count": 106
+}

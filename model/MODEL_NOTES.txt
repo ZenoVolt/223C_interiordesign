@@ -1,0 +1,40 @@
+223C EXISTING SHELL — MODEL NOTES
+
+CONFIRMED
+- Existing home; preserve every wall; first delivery is the architectural shell.
+- Plan measurements are millimetres between finished wall faces.
+- Grey denotes concrete; white denotes internal wall; green denotes dimension guides.
+- Living upper left, study upper middle left, girls bedroom upper middle right, master upper right, maid room lower left, kitchen lower centre, dining beside bathrooms.
+- 2580 mm is finished floor to unfinished ceiling.
+- Kitchen 2388 mm element is a fixed wall. Three-panel sliding door lies to its LEFT, between that wall and the 930 mm return.
+- Other doors are hinged. Maid room door swings OUTWARDS into the entrance area; other room doors swing inwards.
+- Study and girls bedroom doorways stay in place, with hinges swapped from v01: study at east/right jamb, girls at west/left jamb.
+- Master door upper hinge is centred on the 145 mm segment between 365 and 1405 below the girls bedroom. Its doorway crosses the passage toward the bathrooms, enclosing the master entry area.
+- Main room windows have a fixed lower panel, middle casement and horizontal top opening section.
+- Service-yard window spans the EAST wall, with three sliding panels above a 1000 mm-high solid wall. The previously inferred south-wall window is removed.
+- Sanitary fixture positions follow the plan; bathrooms have a floor drop.
+- 325ht means a 325 mm beam drop (2255 mm underside). 1405 x 1095 x 150h denotes a 150 mm ceiling drop.
+
+PROVISIONAL / TO CHECK
+- Door heads 2100 mm; window sill 600 mm and head 2200 mm. Elevations were not measured.
+- Window panel split at 1000 / 1850 mm; top section represented as top-hung, pending confirmation.
+- Bathroom window sill/head 1450 / 2100 mm. Service-yard sill is confirmed at 1000 mm; its 2200 mm head remains provisional.
+- Bathroom drop 60 mm; AC ledge depth 750 mm, ledge floor -150 mm, parapet 800 mm above ledge floor.
+- Door widths and heights remain provisional. Master door uses the inferred full passage width of about 1183 mm. Bathroom hinge sides and maid doorway position remain inferred; confirmed bedroom hinge sides and maid outward swing are retained.
+- Maid east-wall door inferred as 710 mm from 2285 - 595 - 980. Opening starts 595 mm from the north inside face.
+- Beam labels with explicit heights are modelled as supplied. Unlabelled living/girls north beam drops use 325 mm; girls south/return use 325 mm; kitchen spine uses 345 mm; kitchen west return uses 355 mm.
+- Only the explicitly shown 1405 x 1095 x 150 mm false ceiling is modelled. Other false ceilings remain unmeasured.
+- Plan linework is traced at 150 px/m. The study/girls 3610 mm depth and maid 2285 mm depth override raster drift. Primary clear dimensions are checked within 5 mm; contradictory minor chains remain approximate.
+- Wall/window reveal depths follow raster linework where no thickness is supplied. Finish materials are neutral placeholders.
+- The unfinished ceiling is the height datum. A hidden 120 mm slab above it is a viewing aid, not a measured construction depth.
+- Fixed sanitary fixtures are simplified location proxies, not selected products. No loose furniture or kitchen cabinetry has been invented.
+
+HOW TO USE
+- Metric scene; Blender displays millimetres. 1 Blender unit = 1 metre.
+- Ceiling slab and packed references start hidden. Toggle collections 10 and 12.
+- Collection 13 is reserved for loose furniture.
+- Door leaves follow their hinge empties. Rotate hinge Z to swing a leaf.
+- Beams stay separate from all walls. Collection 06 can be hidden for furniture planning.
+- All finishes and sanitary shapes are placeholders.
+- Rebuild from model_settings.json + build_house.py.
+- Cameras: Overview, Top plan, Ceiling structure, Kitchen eye level, Living eye level.
