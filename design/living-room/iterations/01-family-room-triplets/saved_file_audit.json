@@ -1,0 +1,24 @@
+{
+  "all_pass": true,
+  "checks": [
+    {
+      "variant": "A-with-tv",
+      "architecture_geometry_unchanged": true,
+      "architecture_meshes": 246,
+      "differences": [],
+      "saved_study_wall_run_mm": 2200.0,
+      "study_within_2200": true
+    },
+    {
+      "variant": "B-without-tv",
+      "architecture_geometry_unchanged": true,
+      "architecture_meshes": 246,
+      "differences": [],
+      "saved_study_wall_run_mm": 2200.0,
+      "study_within_2200": true
+    }
+  ],
+  "valid_for_current_brief": false,
+  "validation_status": "superseded",
+  "superseded_reason": "Owner correction: both Packout stacks 2000 mm high; fixed girls south-wall built-in wardrobe omitted. Iteration 01 storage layouts invalid."
+}

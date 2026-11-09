@@ -28,3 +28,13 @@ See [model instructions](model/README.md), [confirmed facts and assumptions](mod
 The [saved-file geometry audit](model/geometry_audit.json) checks 15 principal room dimensions against the plan within a 5 mm raster tolerance. It also verifies the corrected window opening and door locations/swings. Further furniture layouts should be saved as separate design versions.
 
 [Labelled floor plan](model/previews/02_floor_plan.png) · [Ceiling structure](model/previews/03_ceiling_structure.png) · [Service-yard window](model/previews/04_service_yard_window.png)
+
+## Living-room design
+
+The [iteration plan](design/living-room/PLAN.md) starts with a household interview, compares measured furniture layouts, and records accepted decisions before refining finishes and sourcing. The [living-room brief](design/living-room/BRIEF.md) separates existing architectural evidence from owner preferences still to be established.
+
+The reusable [living-room-design skill](design/skills/living-room-design/SKILL.md) is also installed in the owner's personal Codex skills folder. Invoke it with `$living-room-design`. Keep project decisions in the brief; preserve the existing shell when creating design variants.
+
+The [first coordinated room designs](design/living-room/iterations/01-family-room-triplets/REVIEW.md) are **superseded**: the owner confirmed 2000 mm Packout stacks and an existing girls' built-in wardrobe omitted from those layouts. Their images/models are retained as historical concepts. See the current [plan](design/living-room/PLAN.md) for correction requirements; the old proxy checks are not a current feasibility result.
+
+[Revision 02](design/living-room/iterations/02-wardrobe-and-full-height-packout/REVIEW.md) includes the existing sliding wardrobe, full-height freestanding Packout composition, updated plans/renders and editable models. The girls' west metal-cupboard doors require the pull-out bed stored for full access; the proposed night route is at the bed foot.

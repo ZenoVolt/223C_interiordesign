@@ -1,0 +1,4 @@
+interface:
+  display_name: "Living Room Design"
+  short_description: "Interview, compare layouts, and refine a living room"
+  default_prompt: "Use $living-room-design to challenge my brief and iterate on my living room using the existing project model."

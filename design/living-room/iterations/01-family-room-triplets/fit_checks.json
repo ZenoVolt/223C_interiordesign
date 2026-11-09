@@ -1,0 +1,164 @@
+{
+  "scope": "Proxy footprint, modelled door sweep and baseline checks; not a site/product/structural or complete storage-capacity approval.",
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "Architectural baseline byte-for-byte unchanged",
+      "pass": true,
+      "detail": "19384b90381eda3059a4c44cf9e691bbb4d801723dbfc2ab9452b82d4ef81a72"
+    },
+    {
+      "name": "A-with-tv study storage within authorised 2200 mm",
+      "pass": true,
+      "detail": {
+        "start_y": 6.68,
+        "end_y": 8.88,
+        "length_mm": 2200.000000000001
+      }
+    },
+    {
+      "name": "A-with-tv three existing cupboards retained",
+      "pass": true,
+      "detail": "Two girls, one study"
+    },
+    {
+      "name": "A-with-tv two Packout stack envelopes retained",
+      "pass": true,
+      "detail": "Actual stacks remain unmeasured"
+    },
+    {
+      "name": "A-with-tv 21 box contents included",
+      "pass": true,
+      "detail": "10 toy-box + 11 study-box contents; repacking allowed"
+    },
+    {
+      "name": "A-with-tv PACKOUT stack 1 PROXY inside utility footprint",
+      "pass": true,
+      "detail": "Proxy envelope only, shelf/hinge/actual-case fit not proved"
+    },
+    {
+      "name": "A-with-tv PACKOUT stack 2 PROXY inside utility footprint",
+      "pass": true,
+      "detail": "Proxy envelope only, shelf/hinge/actual-case fit not proved"
+    },
+    {
+      "name": "A-with-tv marked play area clear of furniture",
+      "pass": true,
+      "detail": {
+        "play_area_m2": 3.91
+      }
+    },
+    {
+      "name": "A-with-tv no unintended furniture footprint overlap",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "A-with-tv girls full modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "A-with-tv study full modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "A-with-tv living furniture clears wall footprints",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "A-with-tv girls furniture clears wall footprints",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "A-with-tv study furniture clears wall footprints",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "B-without-tv study storage within authorised 2200 mm",
+      "pass": true,
+      "detail": {
+        "start_y": 6.68,
+        "end_y": 8.88,
+        "length_mm": 2200.000000000001
+      }
+    },
+    {
+      "name": "B-without-tv three existing cupboards retained",
+      "pass": true,
+      "detail": "Two girls, one study"
+    },
+    {
+      "name": "B-without-tv two Packout stack envelopes retained",
+      "pass": true,
+      "detail": "Actual stacks remain unmeasured"
+    },
+    {
+      "name": "B-without-tv 21 box contents included",
+      "pass": true,
+      "detail": "10 toy-box + 11 study-box contents; repacking allowed"
+    },
+    {
+      "name": "B-without-tv PACKOUT stack 1 PROXY inside utility footprint",
+      "pass": true,
+      "detail": "Proxy envelope only, shelf/hinge/actual-case fit not proved"
+    },
+    {
+      "name": "B-without-tv PACKOUT stack 2 PROXY inside utility footprint",
+      "pass": true,
+      "detail": "Proxy envelope only, shelf/hinge/actual-case fit not proved"
+    },
+    {
+      "name": "B-without-tv marked play area clear of furniture",
+      "pass": true,
+      "detail": {
+        "play_area_m2": 3.655
+      }
+    },
+    {
+      "name": "B-without-tv no unintended furniture footprint overlap",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "B-without-tv girls full modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "B-without-tv study full modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "B-without-tv living furniture clears wall footprints",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "B-without-tv girls furniture clears wall footprints",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "B-without-tv study furniture clears wall footprints",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "unresolved": [
+    "Exact study permitted segment endpoints",
+    "Actual Packout stack dimensions",
+    "Selected pull-out bed and retained recliner envelopes",
+    "Girls south-wall jamb/skirting and cupboard width tolerances",
+    "Shelf loads, usable cupboard interiors and actual content fit",
+    "Installed finish and lighting appearance"
+  ],
+  "valid_for_current_brief": false,
+  "validation_status": "superseded",
+  "superseded_reason": "Owner correction: both Packout stacks 2000 mm high; fixed girls south-wall built-in wardrobe omitted. Iteration 01 storage layouts invalid."
+}
