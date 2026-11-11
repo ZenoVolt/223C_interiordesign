@@ -1,0 +1,217 @@
+{
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "Architecture geometry unchanged",
+      "pass": true,
+      "detail": {
+        "meshes": 246
+      }
+    },
+    {
+      "name": "Baseline file unchanged",
+      "pass": true,
+      "detail": "19384b90381eda3059a4c44cf9e691bbb4d801723dbfc2ab9452b82d4ef81a72"
+    },
+    {
+      "name": "Five real-width west modules, 800 each",
+      "pass": true,
+      "detail": [
+        800,
+        800,
+        800,
+        800,
+        800
+      ]
+    },
+    {
+      "name": "Living straight cabinets 350 deep",
+      "pass": true,
+      "detail": {
+        "WEST STORAGE W1": 350.0,
+        "WEST STORAGE W2": 350.0,
+        "WEST STORAGE W3": 350.0,
+        "WEST STORAGE W4": 350.0,
+        "WEST STORAGE W5": 350.0,
+        "RETURN STORAGE L1": 350.0
+      }
+    },
+    {
+      "name": "All ten tall cabinets 2350 high",
+      "pass": true,
+      "detail": {
+        "NEW girls walnut cabinet 1": 2350,
+        "NEW girls walnut cabinet 2": 2350,
+        "NEW girls walnut cabinet 3": 2350,
+        "WEST STORAGE W1": 2350,
+        "WEST STORAGE W2": 2350,
+        "WEST STORAGE W3": 2350,
+        "WEST STORAGE W4": 2350,
+        "WEST STORAGE W5": 2350,
+        "RETURN STORAGE L1": 2350,
+        "L CORNER 630 x 630 OPEN": 2350
+      }
+    },
+    {
+      "name": "Girls widths 800/800/600 retained",
+      "pass": true,
+      "detail": "Girls 400 mm depth remains provisional"
+    },
+    {
+      "name": "Real corner reservation 630 by 630",
+      "pass": true,
+      "detail": {
+        "bounds": [
+          0.033333003520965576,
+          3.4866669178009033,
+          0.0,
+          0.663332998752594,
+          4.116666793823242,
+          2.3499999046325684
+        ],
+        "note": "Interior L contour / staggered dividers remain illustrative"
+      }
+    },
+    {
+      "name": "Invented blind void/filler removed",
+      "pass": true,
+      "detail": "Actual open corner is now in the inventory"
+    },
+    {
+      "name": "North setback exactly 360",
+      "pass": true,
+      "detail": {
+        "north_setback_mm": 359.9999772949225,
+        "main_end_y": 8.126667022705078
+      }
+    },
+    {
+      "name": "West chain fits measured 5040 shell depth",
+      "pass": true,
+      "detail": {
+        "chain_mm": [
+          40,
+          630,
+          10,
+          4000,
+          360
+        ],
+        "sum_mm": 5040
+      }
+    },
+    {
+      "name": "800 return within short backing wall",
+      "pass": true,
+      "detail": {
+        "east_end_gap_mm": 59.99987965393072,
+        "join_gap_mm": 9.999990463256836
+      }
+    },
+    {
+      "name": "All new tall cabinet meshes clear existing walls/beams",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Server remains removed",
+      "pass": true,
+      "detail": "Owner instruction carried forward"
+    },
+    {
+      "name": "Reference door designs retained",
+      "pass": true,
+      "detail": "Six straight living units x four glass panels; two girls 800 units x four; 600 open/drawers; real corner open"
+    },
+    {
+      "name": "77-inch visible screen retained",
+      "pass": true,
+      "detail": {
+        "visible_diagonal_inches": 76.99998775343865
+      }
+    },
+    {
+      "name": "3180 mm seated-eye viewing distance retained",
+      "pass": true,
+      "detail": {
+        "eye_to_screen_mm": 3179.999828338623
+      }
+    },
+    {
+      "name": "TV/console clear walls and beams",
+      "pass": true,
+      "detail": "East wall arrangement unchanged from version 6"
+    },
+    {
+      "name": "No unintended night-state furniture footprint overlaps",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Rear sofa gap recomputed to about 807",
+      "pass": true,
+      "detail": {
+        "closed_gap_mm": 806.6669726371761,
+        "remaining_with_400_leaf_mm": 406.666972637176,
+        "comfort": "Unresolved; sequential use"
+      }
+    },
+    {
+      "name": "West 400 mm door sectors clear other furniture",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1850 by 1750 floor-play footprint clear",
+      "pass": true,
+      "detail": {
+        "area_m2": 3.2375000000000003
+      }
+    },
+    {
+      "name": "All retained content groups and 21 boxes allocated",
+      "pass": true,
+      "detail": "Actual usable capacity reopened at 350 depth; no numeric capacity approval"
+    },
+    {
+      "name": "Fixed sliding wardrobe retained",
+      "pass": true,
+      "detail": "600 deep existing bay reserved"
+    },
+    {
+      "name": "Two full-height Packout stacks retained",
+      "pass": true,
+      "detail": "Study unchanged"
+    },
+    {
+      "name": "Girls 910 mm foot band free in night mode",
+      "pass": true,
+      "detail": "270 side gap is not a route; cupboard use remains restricted"
+    },
+    {
+      "name": "girls modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "study modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "living modelled door swing clear",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "overall_feasibility": "Conditional model proposal; geometry passes do not approve site/products/content or household comfort.",
+  "full_girls_cupboard_access_with_trundle_open": false,
+  "unresolved": [
+    "Actual straight/corner product drawings, connector clearances and shelf contours; internal dimensions and load capacities",
+    "Reduced living depth 350: repack allowed, but actual retained-content fit must be checked again",
+    "Girls actual depth (400 proxy), exact usable 2200 wall/fitting tolerances and door/drawer travel with bed open",
+    "807 rear sofa gap / 407 with 400 door leaf: sequential access and household comfort unverified",
+    "Actual TV/console feet and sofa seated-eye/posture; recliner full operating envelope and guest routes",
+    "Tall-unit support/restraint, glazing/hinges/knobs and installed beam/ceiling/site verification",
+    "Product cost in SGD, delivery/installation; replaced metal carcass destination"
+  ]
+}

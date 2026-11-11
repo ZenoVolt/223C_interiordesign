@@ -1,6 +1,32 @@
 # 223C living-room iteration plan
 
-Started 9 November 2026, Singapore time. Current stage: [revision 03](iterations/03-wall-bounded-american-walnut/REVIEW.md) keeps living cupboards within the backing wall and uses American walnut for new wooden furniture. Revision 02 retained as prior proposal; iteration 01 remains superseded. Girls' day/night cupboard-access restriction still requires review.
+Started 9 November 2026, Singapore time. Current stage: [version 8](iterations/08-west-av-east-storage/REVIEW.md), three tentative 900 mm east cabinets and centred west 77-inch TV / 2590 console / KEF Q11 Meta pair, 3180 mm viewing. Girls/study unchanged, no server. V7 and all earlier proposals preserved; no overall acceptance implied.
+
+## Version 8 — current focused iteration
+
+1. Three 900 × 350 × 2350 H east cabinets, beam-aware y=5.59–8.29. Remove previous west run/corner/return in this separate version. Three-unit count is a hypothesis, not capacity approval.
+2. West AV centred on full 5040 wall: 77-inch visible TV, physical width two-thirds of approx 2590 console, symmetric KEF Q11 Meta pair. Official full terminal/plinth dimensions used; starting toe-in/rear clearance require room tuning.
+3. Keep 3180 screen-face-to-assumed-eye distance, recompute all changed geometry and operating space. Rear sofa gap 807 mm / 357 with 450 leaf open. Check actual products, recline/window/guest use and household comfort separately.
+4. Tall straight frontage falls 4800 to 2700 plus corner removal. Reopen actual fit for all 21 box contents; no contents discarded or overflow destination invented. Obtain usable shelf/content evidence before accepting this storage count.
+5. 29 saved-model geometry checks pass; inspected plan/AV elevation/viewing section and four views saved in V8. Next feedback: AV balance versus reduced storage and behind-sofa access; then acoustic tuning, actual equipment/services and SGD sourcing.
+
+## Version 7 — historical focused iteration
+
+1. Five 800 west modules + 630 corner + 800 return. Chain 40 + 630 + 10 + 4000 + 360 = 5040 mm. Preserve 360 north setback and backing-wall limits. Exact corner contour/connectors remain to verify.
+2. Retain east 77-inch TV and 3180 mm assumed seated-eye distance. Rear sofa gap 807 mm, about 407 mm with 400 mm leaf open; actual product/posture/household use still unresolved.
+3. Girls heights corrected to 2350; reference designs and 800/800/600 widths retained. Actual depth, exact usable 2200 wall/fitting tolerances, contents and bed-state door/drawer operation remain unresolved. Preserve fixed wardrobe/study and Packout composition.
+4. Previous 700 W, 500 D, 2400 H, 200 setback, blind-corner, litre and clearance assumptions are historical. Recheck contents at actual 350 living depth; repacking remains allowed.
+5. Current inspected board/plan/corner/girls views and 28-check audit are in V7. Next: product interiors/connectors, rear access tape-out, girls night operation, recliner/guest use and then SGD sourcing. No purchases or fixed-service work.
+
+## Version 5 — historical focused iteration
+
+1. Preserve shell, fixed wardrobe and study. Six 700 mm west modules plus 900 mm loose return; blind corner excluded from capacity. Check actual meshes against walls/beams and entry/maid door operation.
+2. Leave 200 mm at the north end: 2400 H units cannot intersect the modelled 2255 mm underside beam. Verify actual beam and finished ceiling before selecting furniture.
+3. Apply owner's living reference: upper/main walnut-framed vertical-reeded doors, solid lower drawer, brass knobs/hinges. Remove server completely from the living layout, without claiming an alternative destination.
+4. Apply girls references: two 800 mm glass/niche/wood-base units plus a 600 mm open-shelf/four-drawer unit; all 2400 H. Depth, exact 2200 mm usable segment/fitting tolerance, actual retained-content capacity and night access remain unresolved.
+5. Provide inspected renders, coordinated plans and editable model. References and illustrative contents do not establish product or storage feasibility. Verify suitable glazing/hardware and tall-unit support/restraint within scope when selecting actual products.
+
+Next feedback: whether the L-return feels too heavy at the entry, glass transparency, and the girls' open-niche/drawer access in night mode. Carry confirmed heights, widths, no-TV/no-server direction and Packout composition forward.
 
 ## Revision 02 — corrected fixed inventory and current proposal
 

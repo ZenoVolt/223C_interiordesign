@@ -1,8 +1,41 @@
 # 223C living-room brief
 
-Status: revision 03 applies wall-bounded cupboards and American walnut to new wooden furniture. Girls' day/night metal-cupboard access trade-off remains for owner review. Started 9 November 2026, Singapore time.
+Status: version 8 explores three east 900 mm cabinets and centred west 77-inch TV / large console / KEF Q11 Meta pair, retaining 3180 mm viewing. Capacity, acoustics, site/products, comfort and girls' bed-state access remain unresolved. Started 9 November 2026, Singapore time.
 
-## Latest owner direction — revision 03
+## Current owner direction — version 8
+
+- New version: east living wall storage, tentatively **3 × 900 mm**; west wall large console, **TV two-thirds of console size**, **77-inch TV** and **KEF Q11 Meta speakers**, centred on the wall; same viewing distance.
+- [V8 review](iterations/08-west-av-east-storage/REVIEW.md): three **900 W × 350 D × 2350 H mm** east cabinets. Quantity is a hypothesis; previous owner-confirmed product depth/height retained. Run y=5.59–8.29 clears the modelled north beam by about 37 mm in plan.
+- Interpret size proportion as **bezel-inclusive TV width / console width = 2/3**. TV proxy 1727 W gives approximately **2590 mm console**. Console depth/height remain provisional at 450 D carcass / 550 H.
+- Centre the entire AV group on full 5040 mm west wall at y=5.966667 m. KEF full terminal/plinth envelope **1112 H × 317 W × 380 D**, verified at [manufacturer](https://international.kef.com/products/q11-meta). Speaker pair centres 3200 mm apart, 10° toe-in and about 300 mm rear allowance are provisional tuning positions; walnut appearance illustrative.
+- **3180 mm** horizontal screen-front to assumed seated-eye distance retained; sofa now east-facing west. Rear sofa gap **807 mm**, about **357 mm with 450 mm cabinet leaf open**; household use unresolved.
+- V7's west tall run/corner/return removed in this proposal. Tall straight frontage drops 4800 to **2700 mm**, plus corner loss. Reopen actual contents fit; do not carry V7 capacity or clearance claims. All 21 box contents and three full-cupboard content groups remain required; no purge or invented overflow destination.
+- Girls' cabinet geometry, study and fixed wardrobe unchanged; server remains removed. Previous **360 mm setback applied to west cabinetry in V7**; do not transfer it to east storage. West AV now leaves about 731 mm to each west wall endpoint.
+- V8 passes 29 saved-model geometry checks. Exact storage fit, acoustics, actual recline/guest/window use, site/services and costs remain unresolved. This is a comparison proposal, not acceptance.
+
+## Prior owner decisions — versions 6/7, 10 November 2026
+
+- TV reintroduced on **living east wall with console**, **77 inches**, assumed **3.18 m** viewing. Server remains removed. Overrides V5 no-TV direction.
+- Living range: **800 or 900 W × 350 D × 2350 H mm**, owner confirmed. Actual open **630 × 630 × 2350 H corner** supplied. Girls' cabinet height also **2350 mm**, owner confirmed. Supersedes invented 700 mm modules, 500 D and 2400 H.
+- North setback **must be 360 mm**. [Current V7](iterations/07-product-modules-360-setback/REVIEW.md): **five 800 mm west units + 630 corner + 800 return**. Chain **40 south gap + 630 corner + 10 join + 4000 cabinets + 360 north setback = 5040 mm**. A 900 + four 800 run is 100 mm too long with those allowances.
+- Corner replaces blind void; full 630 square reserved. Internal shelf contour, connectors and capacity remain unverified. Reduced 350 mm depth reopens content fit; old litre allowances are withdrawn as current evidence.
+- Rear sofa access now about **807 mm**, about **407 mm with a 400 mm leaf open**; household comfort/sequential use unresolved. Actual 77-inch visible area and 3180 mm horizontal eye-to-screen set in proxy. Assumed eye 100 mm ahead of sofa centre, 1120 H; actual sofa/posture unmeasured. Console independently assumed 2000 W × 450 D carcass × 550 H.
+- Reference fronts retained. Girls: two 800 glass/niche/wood-base + 600 open-shelf/four-drawer units, all **2350 H**. Girls depth stays **400 mm provisional**; the 350 mm answer applies to living. Exact 2200 wall has zero spare fitting tolerance; night door/drawer restriction persists.
+- 28 saved-file/model checks pass; 246 architectural meshes unchanged. Product/site/actual contents, recline/guest use and costs remain unresolved. Prior versions preserved.
+
+## Prior owner direction — versions 4 and 5, 10 November 2026
+
+- Version 4: living TV on west wall; girls' wood cabinets **800 + 800 + 600 mm**. Preserved separately with TV and solid walnut fronts.
+- Version 5: remove TV, use full west-side storage, consider the L wall, cabinets **2400 mm high**. Height applied to living and new girls' cabinets. Owner subsequently requested reeded-glass doors and supplied separate living/girls cabinet references.
+- **Living reference:** American walnut frames, tall main vertical-reeded glass doors, separate upper glass doors, solid lower drawer, small brass knobs/hinges. Six provisional 700 W × 500 D × 2400 H west modules and a 900 W return onto the maid-room north wall. Blind corner deliberately excluded from storage capacity.
+- **Girls references:** second image explicitly identifies an **800 mm** unit: upper reeded-glass compartments, open niche/pegboard, lower wood doors. Use two of these plus one **600 mm** open-shelf/four-drawer unit based on the first image, preserving the 800/800/600 run. All 2400 H; 400 D remains provisional. Open niches are for books/toys; no coffee appliances or new electrical provision inferred from the reference photo.
+- **Remove the server in living room**, owner instruction overriding the prior living NAS retention. Model and allocation remove it; no destination in another room is assumed. All seven living cabinets now follow the reference front design, including the former NAS bay.
+- Source-model north beam underside **2255 mm**, projecting 160 mm; 2400 H cabinets stop **200 mm short of the north wall**, with 40 mm separation in plan. Beam drop is provisional; verify actual beam/finished ceiling. Literal end-to-end 2400 H storage conflicts with the modelled beam.
+- Girls' nominal 2200 mm run has **zero spare fitting tolerance**. Contents of two full metal cupboards move to new units by allocation; actual capacity unverified. Replaced metal carcass destination unresolved. Night foot band remains 910 mm; 270 mm beside the lower bed is not a route. Door/drawer access still depends on storing the trundle.
+- Reference images establish appearance, not product identity, actual dimensions, availability, hardware or cost. Render bins/books are illustrative, not proof of packing capacity. Glass appearance requires a real sample.
+- [Current version 5 review](iterations/05-full-west-storage-l-return/REVIEW.md). Earlier solid and initial glass V5, variation 4 and older versions are retained; no overall layout acceptance implied.
+
+## Prior owner direction — revision 03
 
 - In A, the cupboard must not extend beyond its backing wall. Revision 03 keeps both living cupboards within the wall endpoints; the shared storage arrangement is corrected in B too.
 - New wooden furniture should use **American walnut**. Apply to new cupboard fronts/carcasses, bed timber, side table and sofa feet. Keep retained pieces and fixed finishes as existing; walnut render is a visual approximation, not a selected product/sample.

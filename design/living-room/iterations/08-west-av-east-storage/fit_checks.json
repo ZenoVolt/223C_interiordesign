@@ -1,0 +1,226 @@
+{
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "Architecture unchanged from preserved V7",
+      "pass": true,
+      "detail": {
+        "meshes": 246
+      }
+    },
+    {
+      "name": "Girls room geometry unchanged",
+      "pass": true,
+      "detail": {
+        "meshes": 460,
+        "height_mm": 2350,
+        "depth_status": "400 proxy"
+      }
+    },
+    {
+      "name": "Study geometry unchanged",
+      "pass": true,
+      "detail": {
+        "meshes": 99
+      }
+    },
+    {
+      "name": "Parent and source bytes preserved",
+      "pass": true,
+      "detail": "Existing shell and V7 untouched"
+    },
+    {
+      "name": "East wall has exactly three 900 mm cabinets",
+      "pass": true,
+      "detail": "2700 mm tall run; quantity is current hypothesis"
+    },
+    {
+      "name": "East cabinets retain 350 D / 2350 H",
+      "pass": true,
+      "detail": "Actual transformed saved meshes"
+    },
+    {
+      "name": "Former west/return/corner storage removed",
+      "pass": true,
+      "detail": "Storage scope changed; former capacity claims withdrawn"
+    },
+    {
+      "name": "East cabinets within backing wall",
+      "pass": true,
+      "detail": {
+        "wall_y": [
+          5.55,
+          8.486667
+        ],
+        "cabinet_y": [
+          5.590000152587891,
+          8.289999961853027
+        ]
+      }
+    },
+    {
+      "name": "East high cabinets clear north beam",
+      "pass": true,
+      "detail": {
+        "gap_mm": 36.6668701171875,
+        "beam_underside_mm": 2255.000114440918
+      }
+    },
+    {
+      "name": "Visible TV diagonal remains 77 inches",
+      "pass": true,
+      "detail": {
+        "diagonal_inches": 76.99998775343865
+      }
+    },
+    {
+      "name": "Physical TV width is exactly two thirds console",
+      "pass": true,
+      "detail": {
+        "tv_outer_width_mm": 1726.6273498535156,
+        "console_width_mm": 2589.9410247802734
+      }
+    },
+    {
+      "name": "3180 mm west screen-to-seated-eye distance",
+      "pass": true,
+      "detail": {
+        "eye": [
+          3.2833330631256104,
+          5.966667175292969,
+          1.1200000047683716
+        ],
+        "screen_front_x": 0.10333307087421417,
+        "horizontal_distance_mm": 3179.999992251396
+      }
+    },
+    {
+      "name": "AV centred on full west wall",
+      "pass": true,
+      "detail": {
+        "wall_midpoint_y": 5.966667
+      }
+    },
+    {
+      "name": "Two KEF Q11 Meta full envelopes modelled",
+      "pass": true,
+      "detail": {
+        "maker_hwd_with_plinth_terminal_mm": [
+          1112,
+          317,
+          380
+        ],
+        "source": "https://international.kef.com/products/q11-meta"
+      }
+    },
+    {
+      "name": "Speaker centres symmetric at 3200 separation",
+      "pass": true,
+      "detail": "10-degree toe-in provisional; finish/driver details illustrative"
+    },
+    {
+      "name": "Speaker rear planning allowance recorded",
+      "pass": true,
+      "detail": {
+        "min_reserved_rear_clearances_mm": [
+          300.36329076747205,
+          300.36329076747205
+        ],
+        "status": "Planning allowance, not acoustic tuning result"
+      }
+    },
+    {
+      "name": "TV feet fit console top",
+      "pass": true,
+      "detail": "Freestanding TV; actual product stand unselected"
+    },
+    {
+      "name": "All west AV parts inside west wall endpoints",
+      "pass": true,
+      "detail": {
+        "north_end_gap_mm": 730.9149133605963,
+        "south_end_gap_mm": 730.9147871093749
+      }
+    },
+    {
+      "name": "Actual living meshes clear walls/beams",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No unintended proxy footprint overlap",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1600 by 1870 floor-play footprint clear",
+      "pass": true,
+      "detail": {
+        "area_m2": 2.992
+      }
+    },
+    {
+      "name": "Rear sofa-to-east-cabinet clearance recomputed",
+      "pass": true,
+      "detail": {
+        "closed_gap_mm": 806.6665803833005,
+        "remaining_with_450_leaf_mm": 356.6665803833004,
+        "comfort": "Unresolved / sequential use"
+      }
+    },
+    {
+      "name": "East 450 mm door sectors clear other furniture",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "South entry/dining circulation band free of furniture",
+      "pass": true,
+      "detail": "1270 mm geometric band across lower living zone; full route/comfort and recline/guest use remain unresolved"
+    },
+    {
+      "name": "girls room-door sweep clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "study room-door sweep clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "living room-door sweep clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "All content groups still required, capacity reopened",
+      "pass": true,
+      "detail": "Requirement/allocation record only; three east cabinets do not establish retained-content fit"
+    },
+    {
+      "name": "Server remains removed",
+      "pass": true,
+      "detail": "Owner direction preserved"
+    }
+  ],
+  "overall_feasibility": "Conditional. Passed geometry does not approve actual storage capacity, acoustics or product/site/household operation.",
+  "gates": {
+    "architectural_geometry": "pass",
+    "specified_tv_and_ratio_geometry": "pass",
+    "actual_content_capacity": "unresolved",
+    "speaker_acoustic_result": "unresolved",
+    "real_furniture_operation_and_comfort": "unresolved",
+    "budget_and_products": "unresolved"
+  },
+  "unresolved": [
+    "Three 900 mm east units are a proposed count; actual shelf interiors and all retained contents/possible overflow not yet established",
+    "North beam/site ceiling and actual cabinet product tolerances: only ~37 mm model plan separation",
+    "807 mm behind sofa / 357 mm with 450 mm leaf: sequential cabinet use, comfort and actual hinge/drawer travel",
+    "Actual recliner full recline and window access, guest chairs and complete routes",
+    "Speaker room tuning/toe-in, grille/finish, cable routes and amplifier/source hardware",
+    "Actual TV bezel/stand/console products and seated eye/posture",
+    "Girls depth, exact 2200 usable wall/fitting and night door/drawer access unchanged and unresolved",
+    "Fixed west services, product costs in SGD and tall-unit support/glazing details"
+  ]
+}

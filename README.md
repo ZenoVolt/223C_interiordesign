@@ -1,5 +1,7 @@
 # 223C Interior Design
 
+Latest furniture proposal: [version 8 — west AV and east storage](design/living-room/iterations/08-west-av-east-storage/REVIEW.md). Three tentative 900 mm east cabinets, centred west 77-inch TV / approx 2590 mm console / KEF Q11 Meta pair, with 3180 mm viewing distance. Girls/study retained, server removed. Includes inspected plans/views, editable model and 29 model checks. Reduced storage capacity, acoustics, site/product and household access remain unresolved; V7 and earlier versions preserved.
+
 Editable Blender model of the existing home, built from the owner's measured floor plan and beam sketch. The first stage is an architectural shell for iterating on loose furniture.
 
 **Current model:** [223C Existing Shell v02](model/223C_Existing_Shell_v02.blend), created with Blender 4.5. The initial [v01 model](model/223C_Existing_Shell_v01.blend) is also retained.

@@ -1,0 +1,160 @@
+{
+  "scope": "Proxy footprint, modelled door sweep and baseline checks; not a site/product/structural or complete storage-capacity approval.",
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "Architectural baseline byte-for-byte unchanged",
+      "pass": true,
+      "detail": "19384b90381eda3059a4c44cf9e691bbb4d801723dbfc2ab9452b82d4ef81a72"
+    },
+    {
+      "name": "A-with-tv living cupboards remain within backing wall",
+      "pass": true,
+      "detail": {
+        "wall_y": [
+          5.55,
+          8.486667
+        ],
+        "cupboard_y": [
+          [
+            6.44,
+            8.440000000000001
+          ],
+          [
+            5.59,
+            6.390000000000001
+          ]
+        ]
+      }
+    },
+    {
+      "name": "A-with-tv study storage within authorised 2200 mm",
+      "pass": true,
+      "detail": {
+        "start_y": 6.68,
+        "end_y": 8.88,
+        "length_mm": 2200.000000000001
+      }
+    },
+    {
+      "name": "A-with-tv girls cabinet widths 800 + 800 + 600",
+      "pass": true,
+      "detail": "400 D x 2000 H provisional"
+    },
+    {
+      "name": "A-with-tv girls cabinets use exactly nominal 2200 wall segment",
+      "pass": true,
+      "detail": "Zero spare fitting tolerance; exact usable wall endpoints unresolved"
+    },
+    {
+      "name": "A-with-tv three full cupboard content groups allocated",
+      "pass": true,
+      "detail": "One metal cupboard in study; two girls content groups allocated to three new wood units. Actual capacity unresolved."
+    },
+    {
+      "name": "A-with-tv west TV with east sofa facing west",
+      "pass": true,
+      "detail": {
+        "tv_centre": [
+          0.233333,
+          7.44
+        ],
+        "sofa_centre": [
+          4.373333,
+          6.35
+        ]
+      }
+    },
+    {
+      "name": "A-with-tv west storage 600 mm illustrative front band clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "A-with-tv 550 mm south circulation band free of proxy footprints",
+      "pass": true,
+      "detail": "Geometric continuity only; no agreed household clearance target / comfort approval"
+    },
+    {
+      "name": "A-with-tv two Packout stack envelopes retained",
+      "pass": true,
+      "detail": "Two freestanding 2000 mm stacks"
+    },
+    {
+      "name": "A-with-tv 21 box contents included",
+      "pass": true,
+      "detail": "10 toy-box + 11 study-box contents; repacking allowed"
+    },
+    {
+      "name": "A-with-tv fixed sliding wardrobe reserved",
+      "pass": true,
+      "detail": "Full south-wall envelope reserved; 600 mm depth owner-confirmed"
+    },
+    {
+      "name": "A-with-tv 910 mm bed-foot band free in night mode",
+      "pass": true,
+      "detail": "This is the access band; 270 mm beside lower mattress is not a walking route"
+    },
+    {
+      "name": "A-with-tv PACKOUT stack 1 / 2000 H drawer allowance clear",
+      "pass": true,
+      "detail": "450 mm forward planning allowance; actual full drawer stroke to verify"
+    },
+    {
+      "name": "A-with-tv PACKOUT stack 2 / 2000 H drawer allowance clear",
+      "pass": true,
+      "detail": "450 mm forward planning allowance; actual full drawer stroke to verify"
+    },
+    {
+      "name": "A-with-tv marked play area clear of furniture",
+      "pass": true,
+      "detail": {
+        "play_area_m2": 3.91
+      }
+    },
+    {
+      "name": "A-with-tv no unintended furniture footprint overlap",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "A-with-tv girls full modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "A-with-tv study full modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "A-with-tv living furniture clears wall footprints",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "A-with-tv girls furniture clears wall footprints",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "A-with-tv study furniture clears wall footprints",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "unresolved": [
+    "Actual girls usable wall length / fitting gaps for 800 + 800 + 600 mm units",
+    "Girls cabinet depth/height and door product details",
+    "Actual capacity for contents of two full metal cupboards",
+    "Acceptance of cabinet access restriction with bed open",
+    "Disposition of two replaced metal carcasses; no in-home destination allocated",
+    "West TV electrical/AV point positions; no fixed service changes authorized",
+    "Actual recliner/reclined and bed dimensions",
+    "Study endpoints, actual drawer strokes and accessories",
+    "Site wardrobe dimensions, finish/lighting appearance",
+    "Guest dining-chair setup and household clearance preferences not yet checked"
+  ],
+  "overall_feasibility": "Conditional: zero fitting tolerance in girls 2200 mm cabinet run; full hinged-door use needs trundle stored. Actual cupboard contents and product/site checks remain unresolved.",
+  "full_cupboard_access_all_bed_states": false
+}

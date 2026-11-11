@@ -1,0 +1,161 @@
+{
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "Architecture unchanged",
+      "pass": true,
+      "detail": {
+        "meshes": 246
+      }
+    },
+    {
+      "name": "Baseline bytes unchanged",
+      "pass": true,
+      "detail": "19384b90381eda3059a4c44cf9e691bbb4d801723dbfc2ab9452b82d4ef81a72"
+    },
+    {
+      "name": "TV completely removed",
+      "pass": true,
+      "detail": "No screen or stand object remains"
+    },
+    {
+      "name": "All ten new storage cabinets exactly 2400 high",
+      "pass": true,
+      "detail": {
+        "NEW girls walnut cabinet 1": 2400.0,
+        "NEW girls walnut cabinet 2": 2400.0,
+        "NEW girls walnut cabinet 3": 2400.0,
+        "WEST STORAGE W1": 2400.0,
+        "WEST STORAGE W2": 2400.0,
+        "WEST STORAGE W3": 2400.0,
+        "WEST STORAGE W4": 2400.0,
+        "WEST STORAGE W5": 2400.0,
+        "WEST STORAGE W6": 2400.0,
+        "RETURN STORAGE L1": 2400.0
+      }
+    },
+    {
+      "name": "Six 700 mm west modules",
+      "pass": true,
+      "detail": "4200 mm main cabinet frontage"
+    },
+    {
+      "name": "Girls widths remain 800 / 800 / 600",
+      "pass": true,
+      "detail": "All now 2400 H; 400 D remains provisional"
+    },
+    {
+      "name": "All new fronts American walnut",
+      "pass": true,
+      "detail": "Procedural illustration carried forward"
+    },
+    {
+      "name": "New cabinet meshes clear walls, beams and false ceiling",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "2400 high north end clears low beam",
+      "pass": true,
+      "detail": {
+        "cabinet_end_y": 8.286666870117188,
+        "beam_start_y": 8.326666831970215,
+        "gap_mm": 40,
+        "beam_underside_mm": 2255
+      }
+    },
+    {
+      "name": "Return ends before L wall endpoint",
+      "pass": true,
+      "detail": {
+        "return_x_end": 1.4833329916000366,
+        "wall_end_x": 1.533333,
+        "end_gap_mm": 50
+      }
+    },
+    {
+      "name": "NAS body inside open W1 bay",
+      "pass": true,
+      "detail": {
+        "body_bounds": [
+          0.16683301329612732,
+          4.165166854858398,
+          0.10000000894069672,
+          0.39983299374580383,
+          4.716667175292969,
+          0.5649999976158142
+        ],
+        "note": "Body containment only; cable bend, airflow and service not approved"
+      }
+    },
+    {
+      "name": "Three retained cupboard content groups and 21 box contents allocated",
+      "pass": true,
+      "detail": "New living west/return storage holds toys/archive; girls units hold prior metal-pair contents; study metal retained"
+    },
+    {
+      "name": "Blind corner excluded from usable capacity",
+      "pass": true,
+      "detail": "No shelves or contents credited"
+    },
+    {
+      "name": "Fixed south wardrobe retained",
+      "pass": true,
+      "detail": "Sliding / 600 D retained"
+    },
+    {
+      "name": "Two 2000 high Packout stacks retained",
+      "pass": true,
+      "detail": "Study arrangement unchanged"
+    },
+    {
+      "name": "No unintended proxy footprint overlaps in night mode",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "2300 x 1700 floor-play zone free with cabinets closed",
+      "pass": true,
+      "detail": {
+        "area_m2": 3.91
+      }
+    },
+    {
+      "name": "Girls 910 mm bed-foot band remains free",
+      "pass": true,
+      "detail": "270 mm side gap is not a walking route"
+    },
+    {
+      "name": "girls modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "study modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "living modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "West 350 mm hinged-leaf sectors clear other furniture",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "overall_feasibility": "Conditional; passed model geometry does not establish site, contents or product feasibility.",
+  "full_girls_cabinet_access_with_trundle_open": false,
+  "unresolved": [
+    "Site verification of north beam underside/projection and installed ceiling; 2400 H has 180 mm to unfinished ceiling only",
+    "Actual cabinet products, level/fitting tolerances, tall-unit support/restraint details within scope",
+    "Girls 2200 mm usable segment has zero spare fitting tolerance; confirm depth and retained content capacity",
+    "Girls full hinged opening requires trundle stored; restriction still awaiting acceptance",
+    "NAS cable/airflow/service access and exact existing west port positions",
+    "No storage capacity credited to blind corner; corner join/adjacent door hardware to verify",
+    "Actual recliner full recline/footstool envelopes and family/guest circulation preferences",
+    "Actual contents/shelf loads, product costs and replaced metal carcass destination"
+  ]
+}

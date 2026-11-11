@@ -3,9 +3,10 @@ import json, hashlib, math, sys
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[2]
-REV3='--revision03' in sys.argv
+REV4='--revision04' in sys.argv
+REV3='--revision03' in sys.argv or REV4
 REV2='--revision02' in sys.argv or REV3
-OUT=Path(__file__).resolve().parent/'iterations'/('03-wall-bounded-american-walnut' if REV3 else ('02-wardrobe-and-full-height-packout' if REV2 else '01-family-room-triplets'))
+OUT=Path(__file__).resolve().parent/'iterations'/('04-west-tv-three-walnut-cabinets' if REV4 else ('03-wall-bounded-american-walnut' if REV3 else ('02-wardrobe-and-full-height-packout' if REV2 else '01-family-room-triplets')))
 d=json.loads((OUT/'layouts.json').read_text(encoding='utf-8'))
 if d.get('valid_for_current_brief') is False:
     raise SystemExit('Iteration 01 is superseded by owner corrections; do not issue current fit claims from its proxy inventory.')
@@ -30,7 +31,24 @@ for name,v in d['variants'].items():
     study=room('study');storage=[i for i in study if i['purpose']=='storage' or (REV2 and i['purpose']=='equipment')]
     span_min=min(rect(i['polygon'])[1] for i in storage);span_max=max(rect(i['polygon'])[3] for i in storage)
     check(name+' study storage within authorised 2200 mm',abs(span_min-6.68)<1e-5 and abs(span_max-8.88)<1e-5 and abs(span_max-span_min-2.2)<1e-5,{'start_y':span_min,'end_y':span_max,'length_mm':(span_max-span_min)*1000})
-    check(name+' three existing cupboards retained',sum(i['name'].startswith('REUSE') for i in its)==3,'Two girls, one study')
+    if REV4:
+        cs=[i for i in room('girls') if i['name'].startswith('NEW girls walnut')]
+        bounds=[rect(i['polygon']) for i in cs]
+        check(name+' girls cabinet widths 800 + 800 + 600', [round(i['dims'][0]*1000) for i in cs]==[800,800,600], '400 D x 2000 H provisional')
+        check(name+' girls cabinets use exactly nominal 2200 wall segment', bool(bounds) and abs(min(r[1] for r in bounds)-6.68)<1e-5 and abs(max(r[3] for r in bounds)-8.88)<1e-5, 'Zero spare fitting tolerance; exact usable wall endpoints unresolved')
+        check(name+' three full cupboard content groups allocated',v['storage']['existing_full_cupboard_content_groups_retained']==3 and sum(i['name'].startswith('REUSE') for i in its)==1, 'One metal cupboard in study; two girls content groups allocated to three new wood units. Actual capacity unresolved.')
+        tv=next(i for i in room('living') if i['purpose']=='screen')
+        sofa=next(i for i in room('living') if i['name'].startswith('SOFA'))
+        check(name+' west TV with east sofa facing west',tv['centre'][0]<.55 and sofa['centre'][0]>4 and abs(sofa['angle']-180)<1e-5, {'tv_centre':tv['centre'],'sofa_centre':sofa['centre']})
+        # 600 mm illustrative west-storage operating band (not a prescribed clearance).
+        use=[(.54,5.59),(1.14,5.59),(1.14,8.44),(.54,8.44)]
+        hit=[i['name'] for i in room('living') if i['purpose'] not in ('storage','screen') and overlap(use,i['polygon'])]
+        check(name+' west storage 600 mm illustrative front band clear',not hit,hit)
+        # Entry-to-east passage band below the living furniture; household comfort unverified.
+        use=[(.6,4.55),(5.073333,4.55),(5.073333,5.1),(.6,5.1)]
+        check(name+' 550 mm south circulation band free of proxy footprints',not any(overlap(use,i['polygon']) for i in room('living')), 'Geometric continuity only; no agreed household clearance target / comfort approval')
+    else:
+        check(name+' three existing cupboards retained',sum(i['name'].startswith('REUSE') for i in its)==3,'Two girls, one study')
     equipment=[i for i in study if i['purpose']=='equipment']
     check(name+' two Packout stack envelopes retained',len(equipment)==2 and (not REV2 or all(i['dims'][2]==2 for i in equipment)),'Two freestanding 2000 mm stacks' if REV2 else 'Actual stacks remain unmeasured')
     check(name+' 21 box contents included',v['storage']['samla_contents_boxes']==21,'10 toy-box + 11 study-box contents; repacking allowed')
@@ -79,6 +97,9 @@ if REV2:
     report['overall_feasibility']='Conditional: metal cupboard doors require bed stored for full access; foot-access night arrangement awaits owner acceptance. Storage capacity/product/site checks remain unresolved.'
     report['full_cupboard_access_all_bed_states']=False
     report['unresolved']=['Exact study and girls west-wall segment endpoints','Bed/recliner product dimensions','Acceptance of metal-cupboard access restricted with bed open','Actual usable cupboard capacity and content fit','Final Packout drawer stroke / installed accessories','Built-in wardrobe width, switch gap, height and finish','Installed lighting / finish appearance']
+if REV4:
+    report['overall_feasibility']='Conditional: zero fitting tolerance in girls 2200 mm cabinet run; full hinged-door use needs trundle stored. Actual cupboard contents and product/site checks remain unresolved.'
+    report['unresolved']=['Actual girls usable wall length / fitting gaps for 800 + 800 + 600 mm units','Girls cabinet depth/height and door product details','Actual capacity for contents of two full metal cupboards','Acceptance of cabinet access restriction with bed open','Disposition of two replaced metal carcasses; no in-home destination allocated','West TV electrical/AV point positions; no fixed service changes authorized','Actual recliner/reclined and bed dimensions','Study endpoints, actual drawer strokes and accessories','Site wardrobe dimensions, finish/lighting appearance','Guest dining-chair setup and household clearance preferences not yet checked']
 (OUT/'fit_checks.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps({'all_pass':report['all_pass'],'checks':len(checks),'failures':[c for c in checks if not c['pass']]},indent=2))
 raise SystemExit(0 if report['all_pass'] else 1)

@@ -1,0 +1,224 @@
+{
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "Architecture unchanged",
+      "pass": true,
+      "detail": {
+        "meshes": 246
+      }
+    },
+    {
+      "name": "Baseline bytes unchanged",
+      "pass": true,
+      "detail": "19384b90381eda3059a4c44cf9e691bbb4d801723dbfc2ab9452b82d4ef81a72"
+    },
+    {
+      "name": "All ten new storage cabinets exactly 2400 high",
+      "pass": true,
+      "detail": {
+        "NEW girls walnut cabinet 1": 2400.0,
+        "NEW girls walnut cabinet 2": 2400.0,
+        "NEW girls walnut cabinet 3": 2400.0,
+        "WEST STORAGE W1": 2400.0,
+        "WEST STORAGE W2": 2400.0,
+        "WEST STORAGE W3": 2400.0,
+        "WEST STORAGE W4": 2400.0,
+        "WEST STORAGE W5": 2400.0,
+        "WEST STORAGE W6": 2400.0,
+        "RETURN STORAGE L1": 2400.0
+      }
+    },
+    {
+      "name": "Six 700 mm west modules",
+      "pass": true,
+      "detail": "4200 mm main cabinet frontage"
+    },
+    {
+      "name": "Girls widths remain 800 / 800 / 600",
+      "pass": true,
+      "detail": "All now 2400 H; 400 D remains provisional"
+    },
+    {
+      "name": "All new fronts American walnut",
+      "pass": true,
+      "detail": "Procedural illustration carried forward"
+    },
+    {
+      "name": "New cabinet meshes clear walls, beams and false ceiling",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "2400 high north end clears low beam",
+      "pass": true,
+      "detail": {
+        "cabinet_end_y": 8.286666870117188,
+        "beam_start_y": 8.326666831970215,
+        "gap_mm": 40,
+        "beam_underside_mm": 2255
+      }
+    },
+    {
+      "name": "Return ends before L wall endpoint",
+      "pass": true,
+      "detail": {
+        "return_x_end": 1.4833329916000366,
+        "wall_end_x": 1.533333,
+        "end_gap_mm": 50
+      }
+    },
+    {
+      "name": "Server removed from living model and allocation",
+      "pass": true,
+      "detail": "Owner instruction overrides prior living retention; no destination elsewhere assumed"
+    },
+    {
+      "name": "Reference glass layouts: 28 living + 8 girls panels",
+      "pass": true,
+      "detail": "Seven living units each main/upper pair; two 800 girls units each main/upper pair; 600 unit open"
+    },
+    {
+      "name": "600 girls reference uses four drawers",
+      "pass": true,
+      "detail": "Open shelves above; two 800 units have niches and lower closed doors"
+    },
+    {
+      "name": "Three retained cupboard content groups and 21 box contents allocated",
+      "pass": true,
+      "detail": "New living west/return storage holds toys/archive; girls units hold prior metal-pair contents; study metal retained"
+    },
+    {
+      "name": "Blind corner excluded from usable capacity",
+      "pass": true,
+      "detail": "No shelves or contents credited"
+    },
+    {
+      "name": "Fixed south wardrobe retained",
+      "pass": true,
+      "detail": "Sliding / 600 D retained"
+    },
+    {
+      "name": "Two 2000 high Packout stacks retained",
+      "pass": true,
+      "detail": "Study arrangement unchanged"
+    },
+    {
+      "name": "No unintended proxy footprint overlaps in night mode",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Marked floor-play zone free with cabinets closed",
+      "pass": true,
+      "detail": {
+        "area_m2": 3.24
+      }
+    },
+    {
+      "name": "Girls 910 mm bed-foot band remains free",
+      "pass": true,
+      "detail": "270 mm side gap is not a walking route"
+    },
+    {
+      "name": "girls modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "study modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "living modelled door swing clear",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "West 350 mm hinged-leaf sectors clear other furniture",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Actual visible screen diagonal is 77 inches",
+      "pass": true,
+      "detail": {
+        "diagonal_inches": 76.99998775343865,
+        "visible_width_mm": 1704.6270370483398,
+        "visible_height_mm": 958.853006362915
+      }
+    },
+    {
+      "name": "Saved camera eye is 3180 mm from screen front",
+      "pass": true,
+      "detail": {
+        "horizontal_distance_mm": 3179.999828338623,
+        "seated_eye": [
+          1.7899999618530273,
+          6.949999809265137,
+          1.1200000047683716
+        ],
+        "screen_front_x": 4.96999979019165
+      }
+    },
+    {
+      "name": "East console inside backing-wall endpoints",
+      "pass": true,
+      "detail": {
+        "actual_console_bounds": [
+          4.564332962036133,
+          5.949999809265137,
+          0.0,
+          5.033332824707031,
+          7.949999809265137,
+          0.550000011920929
+        ]
+      }
+    },
+    {
+      "name": "TV and feet remain inside console top footprint",
+      "pass": true,
+      "detail": {
+        "actual_tv_bounds": [
+          4.75499963760376,
+          6.086686134338379,
+          0.5545000433921814,
+          5.0304999351501465,
+          7.8133134841918945,
+          1.6098530292510986
+        ]
+      }
+    },
+    {
+      "name": "TV and console actual meshes clear walls and beams",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Rear sofa storage gap recomputed",
+      "pass": true,
+      "detail": {
+        "rear_gap_mm": 656.666996479034,
+        "remaining_when_350_mm_leaf_open_mm": 306.66699647903397,
+        "status": "Geometry only; sequential use and household comfort unresolved"
+      }
+    }
+  ],
+  "overall_feasibility": "Conditional; passed model geometry does not establish site, contents or product feasibility.",
+  "full_girls_cabinet_access_with_trundle_open": false,
+  "unresolved": [
+    "Site verification of north beam underside/projection and installed ceiling; 2400 H has 180 mm to unfinished ceiling only",
+    "Actual cabinet products, level/fitting tolerances, tall-unit support/restraint details within scope",
+    "Girls 2200 mm usable segment has zero spare fitting tolerance; confirm depth and retained content capacity",
+    "Girls full hinged opening requires trundle stored; restriction still awaiting acceptance",
+    "No storage capacity credited to blind corner; corner join/adjacent door hardware to verify",
+    "Actual recliner full recline/footstool envelopes and family/guest circulation preferences",
+    "Actual contents/shelf loads, product costs and replaced metal carcass destination",
+    "Reference glass/frames/hinges/knobs are visual proxies; actual product and suitable glazing selection unresolved",
+    "Girls 600 drawer travel and 800 hinged doors require bed-state access verification; night side gap remains 270 mm",
+    "3180 mm assumes modelled seated eye 100 mm ahead of sofa centre; actual sofa/posture/TV feet need confirmation",
+    "657 mm behind sofa / 307 mm with 350 mm door open: storage access is tight, comfort not approved",
+    "Actual reclined envelope, guest placement and east TV power/AV positions unresolved"
+  ]
+}

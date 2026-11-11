@@ -7,9 +7,10 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle, Polygon, Arc
 from PIL import Image, ImageDraw, ImageFont
 
-REV3='--revision03' in sys.argv
+REV4='--revision04' in sys.argv
+REV3='--revision03' in sys.argv or REV4
 REV2='--revision02' in sys.argv or REV3
-OUT=Path(__file__).resolve().parent/'iterations'/('03-wall-bounded-american-walnut' if REV3 else ('02-wardrobe-and-full-height-packout' if REV2 else '01-family-room-triplets'))
+OUT=Path(__file__).resolve().parent/'iterations'/('04-west-tv-three-walnut-cabinets' if REV4 else ('03-wall-bounded-american-walnut' if REV3 else ('02-wardrobe-and-full-height-packout' if REV2 else '01-family-room-triplets')))
 DATA=json.loads((OUT/'layouts.json').read_text(encoding='utf-8'))
 if DATA.get('valid_for_current_brief') is False:
     raise SystemExit('Iteration 01 is superseded; revise the inventory/layout before generating new current design boards.')
@@ -19,6 +20,7 @@ IDS={'SOFA':'S','RETAINED RECLINER':'R','RETAINED FOOTSTOOL':'F','NEW toy':'T','
  'LOW PULL':'B','PULL-OUT':'P','REUSE girls cupboard 1':'C1','REUSE girls cupboard 2':'C2','REUSE study':'C3','NEW study':'U',
  'PACKOUT stack 1':'P1','PACKOUT stack 2':'P2'}
 IDS.update({'NEW archive':'A','FIXED SLIDING':'W'})
+IDS.update({'NEW girls walnut cabinet 1':'G1\n800','NEW girls walnut cabinet 2':'G2\n800','NEW girls walnut cabinet 3':'G3\n600','TV 65':'TV'})
 
 def id_for(name):
     return next((v for k,v in IDS.items() if name.startswith(k)),'?')
@@ -56,12 +58,17 @@ def plan(ax,variant,room,title,night=True):
         ax.annotate('Entry / dining / bedroom route',xy=(4.7,4.55),xytext=(2.55,3.9),ha='center',fontsize=8,arrowprops={'arrowstyle':'->','color':'#8c9f9e','connectionstyle':'angle3'})
     for it in d['items']:
         if it['room']!=room:continue
-        if it['purpose']=='screen':continue
+        if it['purpose']=='screen':
+            if REV4:
+                ax.add_patch(Polygon(it['polygon'],closed=True,facecolor=INK,edgecolor=INK,zorder=8))
+                ax.text(*it['centre'],'TV',color='white',ha='center',va='center',rotation=90,fontsize=7,zorder=9)
+            continue
         if it['purpose']=='trundle_open' and not night:continue
         is_pull=it['purpose']=='trundle_open'
         col='#926b4b' if REV3 and it['name'].startswith(('NEW','LOW PULL','SMALL')) else it['colour']
         ax.add_patch(Polygon(it['polygon'],closed=True,facecolor=col if not is_pull else '#dce7dc',edgecolor='#5b695f',lw=.85,ls='--' if is_pull else '-',zorder=3 if is_pull else 4,alpha=.85))
         x,y=it['centre'];lab=id_for(it['name'])
+        if REV4 and it['name'].startswith('NEW toy'):y-=.66
         ax.text(x,y,lab,ha='center',va='center',fontsize=9,fontweight='bold',zorder=9)
     dim(ax,(x0,y1+.21),(x1 if room!='girls' else 10.803333,y1+.21),f'{5070 if room=="living" else 2670} mm')
     if room=='living':dim(ax,(x1+.2,y0),(x1+.2,y1),'5040 mm',True)
@@ -73,10 +80,17 @@ def plan(ax,variant,room,title,night=True):
             ax.text(8.71,7.35,'NOT A\nROUTE',fontsize=6,ha='center',color='#8c5444')
             dim(ax,(9.25,6.15),(9.25,7.06),'910 foot access',True)
             ax.annotate('',xy=(9.32,6.7),xytext=(8.74,5.9),arrowprops={'arrowstyle':'->','color':GREEN,'connectionstyle':'angle3'})
-            ax.plot([8.58,9.03,9.03,8.58],[6.68,6.68,8.48,8.48],ls=':',color='#a77661',lw=1)
+            if REV4:
+                ax.plot([8.58,8.98,8.98,8.58],[6.68,6.68,8.88,8.88],ls=':',color='#a77661',lw=1)
+                dim(ax,(7.96,6.68),(7.96,8.88),'2200 total',True)
+            else:
+                ax.plot([8.58,9.03,9.03,8.58],[6.68,6.68,8.48,8.48],ls=':',color='#a77661',lw=1)
         else:
             dim(ax,(8.1333,7.6),(8.85,7.6),'~717',False)
             ax.text(8.35,6.35,'Night route',fontsize=7,rotation=90,ha='center',color=GREEN)
+    if REV4 and room=='living':
+        ax.text(-.16,7.05,'WEST / TV + STORAGE',rotation=90,fontsize=8,ha='center',va='center')
+        ax.text(4.83,4.78,'Open to circulation',fontsize=7,ha='right',color=GREEN)
     ax.set_title(title,loc='left',fontsize=13,pad=20);ax.axis('off')
 
 LEGENDS={
@@ -91,27 +105,35 @@ if REV3:
     LEGENDS['living'][1]='T  American walnut toy cupboard: 2000 x 500 x 900 H'
     LEGENDS['living'][2]='A  American walnut archive: 800 x 500 x 2100 H'
     LEGENDS['living'][4]='800 + 50 gap + 2000 = 2850 mm, within backing wall.'
+if REV4:
+    LEGENDS['living'][4]='West: TV/media + archive. East: sofa faces west. NAS stays west.'
+    LEGENDS['girls']=['B/P  Low pull-out bed: 2050 long, 950 / 1900 wide',
+        'W  Retained sliding wardrobe, 600 deep; full south bay reserved',
+        'G1/G2/G3  American walnut: 800 + 800 + 600 = 2200 mm',
+        '400 deep x 2000 high provisional; zero spare fitting tolerance',
+        '910 mm foot band; 270 mm side gap is NOT a walking route',
+        'Full hinged-door use requires trundle stored; actual capacity unverified.']
 
 def single(variant,room,name,title):
     fig=plt.figure(figsize=(10,10),facecolor=PAPER)
-    ax=fig.add_axes([.07,.24,.84,.65]);plan(ax,variant,room,title)
+    ax=fig.add_axes([.07,.24,.84,.60 if REV4 else .65]);plan(ax,variant,room,title)
     fig.text(.075,.965,'223C  /  FAMILY ROOM STUDY',fontsize=10,color=GREEN)
-    fig.text(.075,.935,'REVISION 03 / AMERICAN WALNUT' if REV3 else ('REVISION 02' if REV2 else 'FIRST FURNITURE PASS'),fontsize=19,fontweight='bold',color=INK)
+    fig.text(.075,.935,'VARIATION 4 / WEST TV + WALNUT' if REV4 else ('REVISION 03 / AMERICAN WALNUT' if REV3 else ('REVISION 02' if REV2 else 'FIRST FURNITURE PASS')),fontsize=19,fontweight='bold',color=INK)
     for i,line in enumerate(LEGENDS[room]):fig.text(.085,.205-i*.024,line,fontsize=9)
     fig.text(.085,.035,'Measured shell; furniture proxies. Dimensions in mm. Do not scale image for purchase.',fontsize=8,color='#768277')
     fig.savefig(OUT/(name+'.png'),dpi=180,facecolor=PAPER);plt.close(fig)
 
-single('A-with-tv','living','plan-A-living','A  /  Shared TV and floor play')
-single('B-without-tv','living','plan-B-living','B  /  Conversation and floor play')
-single('A-with-tv','girls','plan-shared-girls','GIRLS  /  Pull-out bed + reused cupboards')
+single('A-with-tv','living','plan-A-living','LIVING  /  TV west, sofa east' if REV4 else 'A  /  Shared TV and floor play')
+if not REV4:single('B-without-tv','living','plan-B-living','B  /  Conversation and floor play')
+single('A-with-tv','girls','plan-shared-girls','GIRLS  /  Three wood cabinets + pull-out bed' if REV4 else 'GIRLS  /  Pull-out bed + reused cupboards')
 single('A-with-tv','study','plan-shared-study','STUDY  /  Hinge-side wall only')
 
-for variant,label in [('A-with-tv','A  /  WITH TV'),('B-without-tv','B  /  WITHOUT TV')]:
+for variant,label in ([('A-with-tv','VARIATION 4 / TV WEST')] if REV4 else [('A-with-tv','A  /  WITH TV'),('B-without-tv','B  /  WITHOUT TV')]):
     fig,axs=plt.subplots(1,3,figsize=(17,8),facecolor=PAPER,gridspec_kw={'width_ratios':[1.45,1,1]})
     for ax,room,title in zip(axs,['living','girls','study'],['LIVING','GIRLS / NIGHT MODE','STUDY / 2200 WALL']):plan(ax,variant,room,title)
     fig.suptitle('223C   '+label+'   /   COORDINATED ROOM TRIPLET',x=.045,ha='left',y=.98,fontsize=20,fontweight='bold',color=INK)
-    fig.text(.045,.12,'Shared: fixed sliding wardrobe retained; 3 full metal cupboards; 21 box contents; 2 freestanding 2000 mm Packout stacks.' if REV2 else 'Shared in both options: 3 existing full cupboards retained; 21 SAMLA box contents accounted for; 2 Packout stack proxies.',fontsize=11)
-    fig.text(.045,.08,'Girls: night access at bed foot. Metal cupboard doors require bed stored for full access. Study archive moves to living.' if REV2 else 'Living toy storage + study upper archive storage are new furniture proxies. Girls use the dining table; no bunk or new desk.',fontsize=10)
+    fig.text(.045,.12,'Girls: 800 + 800 + 600 mm walnut replaces metal pair; contents retained by allocation. Study and fixed wardrobe retained.' if REV4 else ('Shared: fixed sliding wardrobe retained; 3 full metal cupboards; 21 box contents; 2 freestanding 2000 mm Packout stacks.' if REV2 else 'Shared in both options: 3 existing full cupboards retained; 21 SAMLA box contents accounted for; 2 Packout stack proxies.'),fontsize=11)
+    fig.text(.045,.08,'Girls: zero spare fitting tolerance in 2200 mm run; full cabinet opening needs bed stored. 400 D / 2000 H provisional.' if REV4 else ('Girls: night access at bed foot. Metal cupboard doors require bed stored for full access. Study archive moves to living.' if REV2 else 'Living toy storage + study upper archive storage are new furniture proxies. Girls use the dining table; no bunk or new desk.'),fontsize=10)
     fig.text(.045,.04,'Furniture / Packout dimensions and storage fit remain provisional. Existing architecture preserved. See REVIEW.md for assumptions.',fontsize=9,color='#768277')
     fig.subplots_adjust(left=.04,right=.98,bottom=.2,top=.88,wspace=.1)
     fig.savefig(OUT/(variant+'-triplet-plan.png'),dpi=160,facecolor=PAPER);plt.close(fig)
@@ -123,9 +145,9 @@ def fit_image(canvas,file,rect):
     im=Image.open(OUT/file).convert('RGB');x,y,w,h=rect;im.thumbnail((w,h),Image.Resampling.LANCZOS)
     canvas.paste(im,(x+(w-im.width)//2,y+(h-im.height)//2))
 
-for variant,label,desc in [('A-with-tv','A / Shared screen','Sofa faces the TV; adults overlook the central play area.'),('B-without-tv','B / Family lounge','Sofa faces into the room; clear floor play and conversation.')]:
+for variant,label,desc in ([('A-with-tv','Variation 4 / TV west','West-wall screen and storage; east-side sofa; three walnut cabinets for the girls.')] if REV4 else [('A-with-tv','A / Shared screen','Sofa faces the TV; adults overlook the central play area.'),('B-without-tv','B / Family lounge','Sofa faces into the room; clear floor play and conversation.')]):
     c=Image.new('RGB',(1800,1660),PAPER);dr=ImageDraw.Draw(c)
-    dr.text((60,35),'223C / REVISION 03 / AMERICAN WALNUT' if REV3 else ('223C / REVISION 02' if REV2 else '223C / FIRST FURNITURE PASS'),font=font(24),fill=GREEN)
+    dr.text((60,35),'223C / VARIATION 4 / AMERICAN WALNUT' if REV4 else ('223C / REVISION 03 / AMERICAN WALNUT' if REV3 else ('223C / REVISION 02' if REV2 else '223C / FIRST FURNITURE PASS')),font=font(24),fill=GREEN)
     dr.text((60,77),label,font=font(48,True),fill=INK);dr.text((60,140),desc,font=font(25),fill=INK)
     fit_image(c,variant+('-living-storage.png' if REV2 else '-living.png'),(40,192,850,610))
     fit_image(c,variant+'-living-reverse.png',(910,192,850,610))
@@ -144,6 +166,11 @@ for variant,label,desc in [('A-with-tv','A / Shared screen','Sofa faces the TV; 
     if REV3:
         lines[0]='American walnut for new furniture; storage run ends inside the backing wall.'
         lines[1]='Living: 800 mm archive + 50 mm gap + 2000 mm toy cupboard = 2850 mm run.'
+    if REV4:
+        lines=['Living: TV and media/archive cupboards west; seating turns toward the screen.',
+            'Girls: walnut cabinets 800 + 800 + 600 = 2200 mm; zero spare fitting tolerance.',
+            'Cabinet depth 400 / height 2000 mm provisional. Full doors need trundle stored.',
+            'All contents retained by allocation; actual cabinet capacity and site/product fit unresolved.']
     for i,line in enumerate(lines):dr.text((60,1400+44*i),line,font=font(24 if i<3 else 21,i==0),fill=INK if i<3 else '#758176')
     c.save(OUT/(variant+'-board.jpg'),quality=94)
 print('PLANS_AND_BOARDS_COMPLETE')
